@@ -1,0 +1,13 @@
+# Node
+npm-debug.log
+node_modules/
+
+# VSC
+.vscode/
+
+# Python
+__pycache__/
+.pytest_cach/
+
+# PyCharm
+.idea/
