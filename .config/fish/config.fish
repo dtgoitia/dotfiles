@@ -18,6 +18,13 @@ alias gr='git remote'
 alias gl='git log --oneline --all --graph --decorate'
 alias gitconfig='np ~/.gitconfig'
 
+# VSCH
+alias v='vcsh dotfiles'
+alias vs='vcsh dotfiles status'
+alias va='vcsh dotfiles add'
+alias vc='vcsh dotfiles commit'
+alias vl='vcsh dotfiles log --oneling --all --graph --decorate'
+
 # Directories
 alias ice='cd ~/Dropbox/ICE/charter'
 alias civ='cd ~/projects/civil-autolisp'
