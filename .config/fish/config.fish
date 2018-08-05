@@ -62,22 +62,8 @@ alias sup='trizen -Syu --noconfirm'
 # Presets
 alias ls='ls --color=auto'
 
-# Load fish
-# alias ff='exec fish'
-
 # Environment variables
 # export PATH="$HOME/.cargo/bin:$PATH" # Rust binaries
 export PATH="$PATH:$HOME/go/bin"			# Go binaries
 export GOPATH="$HOME/go:/tmp/trizen-dtg"		# Go PATH
 
-# setup Git SSH keys
-# function gssh {
-#   ssh-add &>/dev/null || eval `ssh-agent` &>/dev/null  # start ssh-agent if not present
-#   [ $? -eq 0 ] && {                                    # ssh-agent has started
-#     ssh-add ~/.ssh/your_private.key1 &>/dev/null       # Load key 1
-#   # ssh-add ~/.ssh/your_private.key2 &>/dev/null       # Load key 2
-#   }
-# }
-
-# Resources
-# https://stackoverflow.com/questions/29667714/convert-bash-function-to-fishs
