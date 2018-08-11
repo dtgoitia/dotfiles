@@ -36,6 +36,7 @@ alias projects='cd ~/projects'
 # alias scripts='cd ~/.scripts'
 
 # Applications
+alias aurman='aurman --color always'
 # alias firefox='"C:\Program Files\Firefox Developer Edition\firefox.exe"'
 # alias fi='firefox'
 # alias inkscape='"C:\Program Files\Inkscape\inkscape.exe"'
@@ -56,8 +57,6 @@ alias lsl='ls -la'
 alias lsa='ls -a'
 alias c.='pwd | clip'
 alias rmd='rm -rf'
-alias up='trizen -Syu'
-alias sup='trizen -Syu --noconfirm'
 
 # Presets
 alias ls='ls --color=auto'
