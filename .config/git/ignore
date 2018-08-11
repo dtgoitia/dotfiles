@@ -9,6 +9,7 @@ node_modules/
 __pycache__/
 .pytest_cache/
 .tox/
+*.egg-info/
 
 # PyCharm
 .idea/
