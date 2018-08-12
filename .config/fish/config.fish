@@ -36,12 +36,6 @@ alias projects='cd ~/projects'
 # alias scripts='cd ~/.scripts'
 
 # Applications
-alias aurman='aurman --color always'
-# alias firefox='"C:\Program Files\Firefox Developer Edition\firefox.exe"'
-# alias fi='firefox'
-# alias inkscape='"C:\Program Files\Inkscape\inkscape.exe"'
-# alias meld='"C:/Program Files (x86)/Meld/meld/meld.exe"'
-# alias notepad='"C:/Program Files (x86)/Notepad++/notepad++.exe"'
 alias np='vim'
 alias e='nautilus .'
 
