@@ -1,0 +1,10 @@
+{
+  "Log variable:" : {
+    "prefix": "pr",
+    "body": "print(f\"${1:my_var} = {${1:my_var}}\")"
+  },
+  "Import:" : {
+    "prefix": "fr",
+    "body": "from $1 import ${2:module}"
+  }
+}

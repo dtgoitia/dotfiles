@@ -1,0 +1,47 @@
+{
+  "breadcrumbs.enabled": true,
+  "cSpell.enabledLanguageIds": [
+    "asciidoc",
+    "markdown",
+    "plaintext",
+    "restructuredtext",
+    "text",
+  ],
+  "cSpell.userWords": [
+    "algo",
+    "ebitda",
+    "mismeasurement"
+  ],
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.rulers": [
+    79,
+    119
+  ],
+  "editor.snippetSuggestions": "top",
+  "editor.tabSize": 2,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  "files.exclude": {
+    "**/.git": false
+  },
+  "javascript.referencesCodeLens.enabled": true,
+  "markdown-preview-enhanced.enableExtendedTableSyntax": true,
+  "markdown-preview-enhanced.liveUpdate": true,
+  "markdown.extension.italic.indicator": "_",
+  "materialTheme.fixIconsRunning": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.rendererType": "dom",
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.useCodeSnippetsOnMethodSuggest": true,
+  "vim.disableExtension": false,
+  "window.menuBarVisibility": "toggle",
+  "window.zoomLevel": 0,
+  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "workbench.startupEditor": "newUntitledFile",
+  "xmlLang.javaHome": ""
+}

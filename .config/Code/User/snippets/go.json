@@ -1,0 +1,7 @@
+{
+  "Print line": {
+    "prefix": "print",
+    "body": "fmt.Println($0)",
+    "description": "Print line to console"
+  }
+}

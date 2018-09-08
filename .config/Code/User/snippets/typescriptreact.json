@@ -1,0 +1,12 @@
+{
+  "Print variable": {
+    "prefix": "pr",
+    "body": "console.log(`$1: ${typeof($1)} = ${$1}`);",
+    "description": "Log variable"
+  },
+  "Bind method": {
+    "prefix": "bi",
+    "body": "this.$1 = this.$1.bind(this);",
+    "description": "Bind method"
+  }
+}
