@@ -39,8 +39,8 @@
   "typescript.useCodeSnippetsOnMethodSuggest": true,
   "vim.disableExtension": false,
   "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": 0,
-  "workbench.colorTheme": "Material Theme Palenight High Contrast",
+  "window.zoomLevel": -1,
+"workbench.colorTheme": "Material Theme Palenight High Contrast",
   "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "workbench.startupEditor": "newUntitledFile",
   "xmlLang.javaHome": ""
