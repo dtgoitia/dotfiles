@@ -1,0 +1,8 @@
+[user]
+	email = david.torralba.goitia@gmail.com
+	name = David Torralba Goitia
+[code]
+	editor = vim
+[diff]
+	tool = meld
+
