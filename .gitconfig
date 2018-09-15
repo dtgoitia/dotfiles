@@ -6,3 +6,5 @@
 [diff]
 	tool = meld
 
+[core]
+	editor = vim
