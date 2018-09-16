@@ -12,6 +12,7 @@
     "ebitda",
     "mismeasurement"
   ],
+  "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "all",
   "editor.rulers": [
@@ -26,6 +27,7 @@
   "files.exclude": {
     "**/.git": false
   },
+  "extensions.autoUpdate": false,
   "javascript.referencesCodeLens.enabled": true,
   "markdown-preview-enhanced.enableExtendedTableSyntax": true,
   "markdown-preview-enhanced.liveUpdate": true,
@@ -39,7 +41,7 @@
   "typescript.useCodeSnippetsOnMethodSuggest": true,
   "vim.disableExtension": false,
   "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": -1,
+  "window.zoomLevel": 0,
 "workbench.colorTheme": "Material Theme Palenight High Contrast",
   "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "workbench.startupEditor": "newUntitledFile",
