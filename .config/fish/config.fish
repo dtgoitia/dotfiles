@@ -23,7 +23,7 @@ alias v='vcsh dotfiles'
 alias vs='vcsh dotfiles status'
 alias va='vcsh dotfiles add'
 alias vc='vcsh dotfiles commit'
-alias vl='vcsh dotfiles log --oneling --all --graph --decorate'
+alias vl='vcsh dotfiles log --oneline --all --graph --decorate'
 
 # Directories
 alias ice='cd ~/Dropbox/ICE/charter'
