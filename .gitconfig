@@ -8,3 +8,14 @@
 
 [core]
 	editor = vim
+
+[alias]
+	ch = checkout
+	br = branch
+	co = commit
+	st = status
+	ps = push
+	pl = push
+	unstage = reset HEAD --
+	dtgoitia = "!f() { reponame=$1; git clone git@github.com:dtgoitia/${reponame}.git; }; f"
+
