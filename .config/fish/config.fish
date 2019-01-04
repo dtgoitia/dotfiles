@@ -16,6 +16,7 @@ alias gch='git checkout'
 alias gb='git branch'
 alias gr='git remote'
 alias gl='git log --oneline --all --graph --decorate'
+alias gf='git fetch --all --prune'
 alias gitconfig='np ~/.gitconfig'
 
 # VSCH
