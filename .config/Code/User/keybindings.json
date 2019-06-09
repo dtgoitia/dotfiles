@@ -74,4 +74,10 @@
     "command": "workbench.action.navigateForward",
     "when": "editorTextFocus"
   },
+
+  // vim
+  {
+    "key": "ctrl+shift+v",
+    "command": "toggleVim"
+  },
 ]
