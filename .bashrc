@@ -1,6 +1,11 @@
 # This file is located within Dropbox
 echo ".bashrc (linux) file loaded from Dropbox"
 
+# If Linux, load tmux
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+	tmux
+fi
+
 # Git
 complete -o default -o nospace -F _git g # Autocomplete for 'g' as well
 alias g='git' # Use 'g' as git (you still can use 'git')
@@ -8,34 +13,17 @@ alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
 alias gpl='git pull'
-alias gpsa='git push --all'
 alias gps='git push'
-alias gpla='git pull --all'
-alias gch='git checkout'
-alias gb='git branch'
-alias gr='git remote'
 alias gl='git log --oneline --all --graph --decorate'
-# alias gitconfig='np ~/.gitconfig'
 
-
-# Directories
-alias ice='cd ~/Dropbox/ICE/charter'
-alias civ='cd ~/projects/civil-autolisp'
-alias lang='cd ~/.atom/packages/language-autolisp'
-alias config='cd ~/Dropbox/config'
-alias desktop='cd ~/Desktop/'
-alias dropbox='cd ~/Dropbox/'
-alias projects='cd ~/projects'
-# alias scripts='cd ~/.scripts'
 
 # Applications
-# alias firefox='"C:\Program Files\Firefox Developer Edition\firefox.exe"'
-# alias fi='firefox'
-# alias inkscape='"C:\Program Files\Inkscape\inkscape.exe"'
-# alias meld='"C:/Program Files (x86)/Meld/meld/meld.exe"'
-# alias notepad='"C:/Program Files (x86)/Notepad++/notepad++.exe"'
-alias np='vim'
-alias e='nautilus .'
+if [[ "$OSTYPE" == "linux-gnu"  ]]; then
+	alias np='vim'
+	alias e='nautilus .'
+elif [[ "$OSTYPE" == "win32"  ]]; then
+	alias meld='"C:/Program Files (x86)/Meld/meld/meld.exe"'
+	alias notepad='"C:/Program Files (x86)/Notepad++/notepad++.exe"'
 
 # Reload BASH
 alias brc="source ~/Dropbox/config/.bashrc"
@@ -45,21 +33,15 @@ alias settings="np ~/Dropbox/config/.bashrc"
 alias x='exit'
 alias cl='clear'
 alias cls='clear'
-alias lsl='ls -la'
-alias lsa='ls -a'
+alias la='ls -la'
 alias c.='pwd | clip'
 alias rmd='rm -rf'
-alias up='trizen -Syu'
-alias sup='trizen -Syu --noconfirm'
 
 # Presets
 alias ls='ls --color=auto'
 
 # Load fish
 alias ff='exec fish'
-
-# Scripts
-# alias joblog='~/Dropbox/ICE/charter/CommitJobLog.sh'
 
 # Powerline
 powerline-daemon -q
