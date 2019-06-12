@@ -116,3 +116,4 @@ inoremap <Esc>[1;4B <c-o>Vy<c-o>p
 
 " Exit INSERT mode
 inoremap jj <Esc>
+
