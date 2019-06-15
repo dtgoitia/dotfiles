@@ -74,10 +74,26 @@
     "command": "workbench.action.navigateForward",
     "when": "editorTextFocus"
   },
+  {
+    "key": "ctrl+'",
+    "command": "workbench.action.terminal.toggleTerminal"
+  },
+  { // disable default setting
+    "key": "ctrl+`",
+    "command": "-workbench.action.terminal.toggleTerminal"
+  },
+  {
+    "key": "ctrl+alt+'",
+    "command": "workbench.action.toggleMaximizedPanel"
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "workbench.action.terminal.new"
+  },
 
   // vim
   {
     "key": "ctrl+shift+v",
     "command": "toggleVim"
-  },
+  }
 ]
