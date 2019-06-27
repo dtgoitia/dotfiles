@@ -49,6 +49,11 @@ POWERLINE_BASH_CONTINUATION=1
 POWERLINE_BASH_SELECT=1
 . /usr/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
 
+# nnn configuration
+export NNN_USE_EDITOR=1
+export VISUAL=vim
+export NNN_RESTRICT_NAV_OPEN=1
+
 # Environment variables
 export PATH="$HOME/.cargo/bin:$PATH"            	# Rust binaries
 export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"   	# Ruby binaries
