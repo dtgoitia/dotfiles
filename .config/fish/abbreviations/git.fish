@@ -1,0 +1,11 @@
+abbr --add g 'git' # Use 'g' as git (you still can use 'git')
+abbr --add gs 'git status'
+abbr --add ga 'git add'
+abbr --add gc 'git commit'
+abbr --add gpl 'git pull'
+abbr --add gps 'git push'
+abbr --add gch 'git checkout'
+abbr --add gb 'git branch'
+abbr --add gl 'git log --oneline --all --graph --decorate'
+abbr --add gf 'git fetch --all --prune'
+abbr --add gr 'git remote'

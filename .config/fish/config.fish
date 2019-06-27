@@ -1,43 +1,19 @@
 # Load Powerline
-set fish_function_path $fish_function_path "/usr/lib/python3.7/site-packages/powerline/bindings/fish"
+set fish_function_path $fish_function_path '/usr/lib/python3.7/site-packages/powerline/bindings/fish'
 powerline-setup
 
-# Git
-alias g='git' # Use 'g' as git (you still can use 'git')
-alias gs='git status'
-alias ga='git add'
-alias gc='git commit'
-alias gpl='git pull'
-alias gps='git push'
-alias gch='git checkout'
-alias gb='git branch'
-alias gl='git log --oneline --all --graph --decorate'
-alias gf='git fetch --all --prune'
+# Load abbreviations
+source ~/.config/fish/abbreviations/general.fish
+source ~/.config/fish/abbreviations/git.fish
+source ~/.config/fish/abbreviations/vcsh.fish
 
-# VSCH
-alias v='vcsh dotfiles'
-alias vs='vcsh dotfiles status'
-alias va='vcsh dotfiles add'
-alias vc='vcsh dotfiles commit'
-alias vl='vcsh dotfiles log --oneline --all --graph --decorate'
-
-# Applications
-alias np='vim'
-alias e='nautilus .'
-
-# Reload BASH
-alias brc="source ~/Dropbox/config/.bashrc"
-
-# Shortcuts
-alias cl='clear'
-alias cls='clear'
-alias rmd='rm -rf'
-
-# Presets
-alias ls='ls --color=auto'
+# nnn
+set -x NNN_USE_EDITOR 1
+set -x VISUAL vim
+set -x NNN_RESTRICT_NAV_OPEN 1
 
 # Environment variables
-# export PATH="$HOME/.cargo/bin:$PATH" # Rust binaries
-export PATH="$PATH:$HOME/go/bin"			# Go binaries
-export GOPATH="$HOME/go:/tmp/trizen-dtg"		# Go PATH
+# set -x PATH '$HOME/.cargo/bin:$PATH' # Rust binaries
+set -x PATH "$PATH:$HOME/go/bin"			# Go binaries
+set -x GOPATH "$HOME/go:/tmp/trizen-dtg"		# Go PATH
 
