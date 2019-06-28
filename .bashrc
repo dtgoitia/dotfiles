@@ -24,6 +24,7 @@ if [[ "$OSTYPE" == "linux-gnu"  ]]; then
 elif [[ "$OSTYPE" == "win32"  ]]; then
 	alias meld='"C:/Program Files (x86)/Meld/meld/meld.exe"'
 	alias notepad='"C:/Program Files (x86)/Notepad++/notepad++.exe"'
+fi
 
 # Reload BASH
 alias brc="source ~/Dropbox/config/.bashrc"
@@ -62,11 +63,11 @@ export PATH="$PATH:$HOME/go/bin"			# Go binaries
 export GOPATH="$HOME/go:/tmp/trizen-dtg"		# Go PATH
 
 # setup Git SSH keys
-function gssh {
-  ssh-add &>/dev/null || eval `ssh-agent` &>/dev/null  # start ssh-agent if not present
-  [ $? -eq 0 ] && {                                    # ssh-agent has started
-    ssh-add ~/.ssh/your_private.key1 &>/dev/null       # Load key 1
-  # ssh-add ~/.ssh/your_private.key2 &>/dev/null       # Load key 2
-  }
-}
+# function gssh {
+#   ssh-add &>/dev/null || eval `ssh-agent` &>/dev/null  # start ssh-agent if not present
+#   [ $? -eq 0 ] && {                                    # ssh-agent has started
+#     ssh-add ~/.ssh/your_private.key1 &>/dev/null       # Load key 1
+#   # ssh-add ~/.ssh/your_private.key2 &>/dev/null       # Load key 2
+#   }
+# }
 
