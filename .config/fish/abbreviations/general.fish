@@ -9,3 +9,6 @@ abbr --add e nautilus
 
 abbr --add pi ping 8.8.4.4
 
+abbr --add au aurman -Syu
+abbr --add aun aurman -Syu --noconfirm
+
