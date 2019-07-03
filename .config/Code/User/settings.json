@@ -1,5 +1,82 @@
 {
   "breadcrumbs.enabled": true,
+
+  "css.validate": false,
+
+  "editor.fontFamily": "'Ubuntu Mono', Consolas, 'Courier New', monospace",
+  "editor.lineNumbers": "off",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [ 79, 119 ],
+  "editor.tabSize": 2,
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+
+  "extensions.autoUpdate": false,
+
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.git": false,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/CVS": true,
+  },
+  "files.associations": {
+    "*.jsonc": "jsonc"
+  },
+
+  "git.enableSmartCommit": true,
+
+  "search.showLineNumbers": true,
+
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+
+  "terminal.integrated.rendererType": "dom",  // https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.shellArgs.windows": [ "-l" ],
+
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 1,
+
+  "workbench.activityBar.visible": false,
+  "workbench.colorTheme": "One Dark Pro Bold",
+  "workbench.iconTheme": "eq-material-theme-icons-palenight",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "newUntitledFile",
+
+  "yaml.format.enable": true,
+
+
+
+  // ============================================================================
+  //
+  //     Languages
+  //
+  // ============================================================================
+
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+
+  "javascript.referencesCodeLens.enabled": true,
+
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+
+  
+  // ============================================================================
+  //
+  //     Extensions
+  //
+  // ============================================================================
+
   "cSpell.enabledLanguageIds": [
     "asciidoc",
     "markdown",
@@ -33,45 +110,43 @@
     "resizeable",
     "xmonad"
   ],
-  "editor.lineNumbers": "off",
-  "editor.minimap.enabled": false,
-  "editor.renderWhitespace": "all",
-  "editor.rulers": [ 79, 119 ],
-  // "editor.snippetSuggeVstions": "top",
-  "editor.tabSize": 2,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.openEditors.visible": 0,
-  "files.exclude": {
-    "**/.git": false
+
+  "gitlens.advanced.messages": {
+    "suppressGitDisabledWarning": true
   },
-  "extensions.autoUpdate": false,
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.codeLens.enabled": false,
-  "javascript.referencesCodeLens.enabled": true,
+  "gitlens.views.repositories.files.layout": "tree",
+  "gitlens.views.compare.files.layout": "list",
+  "gitlens.views.search.files.layout": "list",
+
   "markdown-preview-enhanced.enableExtendedTableSyntax": true,
   "markdown-preview-enhanced.liveUpdate": true,
   "markdown.extension.italic.indicator": "_",
-  "search.showLineNumbers": true,
-  "telemetry.enableCrashReporter": false,
-  "telemetry.enableTelemetry": false,
-  "terminal.integrated.rendererType": "dom",
+
+  "remote.SSH.showLoginTerminal": true,
+
+  "scss.validate": false,
+
+  "stylelint.enable": true,
+
   "terraform.telemetry.enabled": false,
-  "typescript.implementationsCodeLens.enabled": true,
-  "typescript.referencesCodeLens.enabled": true,
-  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "todo-tree.defaultHighlight": {
+    "foreground": "magenta",
+    "type": "tag"
+  },
+  "todo-tree.tags": [
+    "TODO",
+    "FIXME",
+  ],
+
   "vim.disableExtension": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    },
+      "before": [ "j", "j" ],
+      "after": [ "<Esc>" ],
+    }
   ],
-  "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": 1,
-  "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "One Dark Pro Bold",
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
-  "workbench.startupEditor": "newUntitledFile",
-  "xmlLang.javaHome": ""
 }
+

@@ -2,15 +2,6 @@
   email = david.torralba.goitia@gmail.com
   name = David Torralba Goitia
 
-[code]
-  editor = vim
-
-[diff]
-  tool = meld
-
-[core]
-  editor = vim
-
 [alias]
   ch = checkout
   br = branch
@@ -21,3 +12,13 @@
   lg = log --oneline --all --graph --decorate
   unstage = reset HEAD --
   dtgoitia = "!f() { reponame=$1; git clone git@github.com:dtgoitia/${reponame}.git; }; f"
+
+[core]
+  editor = vim
+  ignorecase = false
+
+[code]
+  excludesfile = "$HOME\\.gitignore_global"
+
+[diff]
+  tool = meld
