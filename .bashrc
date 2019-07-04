@@ -7,14 +7,14 @@
 echo "[$(date +%Y-%m-%d" "%T)] .bashrc (linux) file loaded from Dropbox"
 
 # Constants
-readonly LINUX_OS="linux-gnu"
-readonly WINDOWS_OS="msys"
+export LINUX_OS="linux-gnu"
+export WINDOWS_OS="msys"
 
 # Environment variables
-export PATH="$HOME/.cargo/bin:$PATH"            	# Rust binaries
-export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"   	# Ruby binaries
-export PATH="$PATH:$HOME/go/bin"			# Go binaries
-export GOPATH="$HOME/go:/tmp/trizen-dtg"		# Go PATH
+export PATH="$HOME/.cargo/bin:$PATH"            # Rust binaries
+export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"   # Ruby binaries
+export PATH="$PATH:$HOME/go/bin"                # Go binaries
+export GOPATH="$HOME/go:/tmp/trizen-dtg"        # Go PATH
 
 if [[ "$OSTYPE" == "$LINUX_OS" ]]; then
     export GEM_HOME=$(ruby -e 'print Gem.user_dir') 	# Bundle configuration
@@ -95,56 +95,115 @@ if [[ "$OSTYPE" == "$LINUX_OS"  ]]; then
 fi
 
 # SSH
-# function gssh {
-#   ssh-add &>/dev/null || eval `ssh-agent` &>/dev/null  # start ssh-agent if not present
-#   [ $? -eq 0 ] && {                                    # ssh-agent has started
-#     ssh-add ~/.ssh/your_private.key1 &>/dev/null       # Load key 1
-#   # ssh-add ~/.ssh/your_private.key2 &>/dev/null       # Load key 2
-#   }
-# }
-# SSH
 if [[ "$OSTYPE" == "$WINDOWS_OS" ]]; then
-    # Look for all already initialized SSH agents
-    # Iterate over each initialized SSH agent found
-    # Set the SSH_AUTH_SOCK env var with the found SSH agent path
-    # Try to list added fingerprints
-    # If no fingerprints are found, the SSH agent is stale. Delete it.
-    # TODO: finish with this function
-    #
-    # Insipired by https://gist.github.com/akabos/4266975
-    ssh-reagent () {
+    export DTG_SSH_KEY_PATH="$HOME/.ssh/id_rsa_dtgoitia"
+    indent="  >"
 
+    function ssh_reconnect () {
+        # $1 - verbose mode ("-v")
+        #
+        # Look for all already initialized SSH agents
+        # Iterate over each initialized SSH agent found
+        # Set the SSH_AUTH_SOCK env var with the found SSH agent path
+        # Try to list added fingerprints
+        # If no fingerprints are found, the SSH agent is stale. Delete it.
+        # TODO: finish with this function
+        #
+        # Insipired by https://gist.github.com/akabos/4266975
+        if [[ "$1" == "-v" ]]; then
+            echo "Reconnecting to a SSH Agent..."
+        fi
         for agent in /tmp/ssh-*/agent.*; do
             export SSH_AUTH_SOCK=$agent
-      # Try to reuse the initialized SSH agent
-            if ssh-add -l 2>&1 > /dev/null; then
-                echo Found working SSH Agent:
-                ssh-add -l
+            if [[ "$agent" == "/tmp/ssh-*/agent.*" ]]; then
+                # Nothing found, do nothing
+                :
+            elif ssh-add -l 2>&1 > /dev/null; then
+                # Try to reuse the initialized SSH agent
+                if [[ "$1" == "-v" ]]; then
+                    echo "$indent Found working SSH Agent at $agent"
+                fi
+                # ssh-add -l  # TODO: is this needed?
                 return
-            # Initialized SSH agent is stale. Delete it
-      else
-          SSH_AUTH_SOCK_DIR=$(echo $SSH_AUTH_SOCK | sed -E 's/(\/tmp\/ssh.*\/)agent\..*/ \1 /')
-    echo Deleting non working SSH Agent: $SSH_AUTH_SOCK_DIR
-    rm -rf $SSH_AUTH_SOCK_DIR
+            else
+                # Initialized SSH agent is stale. Delete it
+                ssh_auth_sock_dir=$(echo $agent | sed -E 's/(\/tmp\/ssh.*\/)agent\..*/ \1 /')
+                if [[ "$1" == "-v" ]]; then
+                    echo "$indent Deleting non working SSH Agent: $ssh_auth_sock_dir"
+                fi
+                rm -rf $ssh_auth_sock_dir  # TODO: remove
             fi
         done
-        echo Cannot find ssh agent - maybe you should reconnect and forward it?
-    } 
-  
-  function ssh-setup () {
-    # First argument ($1) = id_rsa
-    id_rsa_dtgoitia
-    echo ""
-    echo Starting the SSH agent in the background...
-    eval $(ssh-agent -s)
-    echo ""
-    echo Adding $1 key to SSH agent...
-    ssh-add ~/.ssh/$1
-    echo ""
-    echo Testing your SSH connection...
-    ssh -T git@github.com
-  }
-  
-  alias ssh-dtgoitia="ssh-setup id_rsa_dtgoitia"
-fi
 
+        if [[ "$1" == "-v" ]]; then
+            echo "$indent No working SSH agent found"
+        fi
+        
+        # Clean last stored SSH_AUTH_SOCK
+        export SSH_AUTH_SOCK=""
+    }
+
+    function start_new_ssh_agent () {
+        # $1 - verbose mode ("-v")
+        if [[ "$1" == "-v" ]]; then
+            echo "Starting a new SSH agent..."
+        fi
+
+        # output=$((eval $(ssh-agent -s)) 2>&1)
+        eval $(ssh-agent -s)
+
+        if [[ "$1" == "-v" ]]; then
+            echo "$indent $output"
+            echo "$indent SSH_AUTH_SOCK=$SSH_AUTH_SOCK"
+        fi
+    }
+
+    function add_key_to_ssh_agent () {
+        # $1 - verbose mode ("-v")
+        if [[ "$1" == "-v" ]]; then
+            echo "Adding key to SSH agent..."
+        fi
+
+        if [[ ! "$DTG_SSH_KEY_PATH" ]]; then
+            echo "$indent DTG_SSH_KEY_PATH environment variable is not defined"
+            return 1
+        elif [[ ! -e "$DTG_SSH_KEY_PATH" ]]; then
+            echo "$indent '$DTG_SSH_KEY_PATH' file does not exist"
+            return 1
+        elif [[ ! -f "$DTG_SSH_KEY_PATH" ]]; then
+            echo "$indent $DTG_SSH_KEY_PATH must be a file"
+            return 1
+        elif [[ "$1" == "-v" ]]; then
+            echo "$indent SSH key found!"
+            echo "$indent SSH key: $DTG_SSH_KEY_PATH"
+            echo "$indent Adding key to the SSH agent..."
+        else
+            :
+        fi
+
+        ssh-add $DTG_SSH_KEY_PATH 2>/dev/null
+    }
+
+    function test_github_ssh_connection () {
+        # $1 - verbose mode ("-v")
+        github_ssh_path="git@github.com"
+        if [[ "$1" == "-v" ]]; then
+            echo "Testing your SSH connection with $github_ssh_path..."
+        fi
+        ssh -T $github_ssh_path
+    }
+
+    function setup_ssh () {
+        # $1 - verbose mode ("-v")
+        ssh_reconnect $1
+
+        if [[ -z "$SSH_AUTH_SOCK" ]]; then
+            start_new_ssh_agent $1
+            add_key_to_ssh_agent $1
+            test_github_ssh_connection $1
+        fi
+    }
+    
+    alias ssh-dtgoitia="setup_ssh"
+    alias ssh_dtgoitia="setup_ssh"
+fi
