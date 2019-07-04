@@ -3,11 +3,19 @@
 
   "css.validate": false,
 
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.renderIndicators": true,
+
   "editor.fontFamily": "'Ubuntu Mono', Consolas, 'Courier New', monospace",
-  "editor.lineNumbers": "off",
-  "editor.minimap.enabled": false,
+  "editor.glyphMargin": false,  // get ridd off infrequently used area
+  "editor.hover.delay": 600,
+  "editor.lineNumbers": "off",  // get ridd off infrequently used area
+  "editor.minimap.enabled": false,  // get ridd off infrequently used area
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 79, 119 ],
+  "editor.showFoldingControls": "mouseover",
+  "editor.folding": false,  // get ridd off infrequently used area
   "editor.tabSize": 2,
 
   "explorer.confirmDelete": false,
@@ -27,9 +35,10 @@
     "*.jsonc": "jsonc"
   },
 
-  "git.enableSmartCommit": true,
+  "git.enabled": true,
+  "git.enableSmartCommit": false,
 
-  "search.showLineNumbers": true,
+  "search.showLineNumbers": false,
 
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
@@ -40,7 +49,7 @@
 
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
-  "window.zoomLevel": 1,
+  "window.zoomLevel": 0,
 
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "One Dark Pro Bold",
@@ -58,12 +67,40 @@
   //
   // ============================================================================
 
-  "[python]": {
+  "[javascript]": {
+    "editor.codeLens": true,
     "editor.insertSpaces": true,
-    "editor.tabSize": 4
+    "editor.tabSize": 2,
   },
-
+  "[json]": {
+    "editor.codeLens": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+  },
+  "[markdown]": {
+    "editor.codeLens": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+  },
+  "[python]": {
+    "editor.codeLens": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+  },
+  "[shellscript]": {
+    "editor.codeLens": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+  },
+  "[typescript]": {
+    "editor.codeLens": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+  },
+  
   "javascript.referencesCodeLens.enabled": true,
+
+  "python.terminal.activateEnvironment": false,
 
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
@@ -116,6 +153,7 @@
   },
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.codeLens.enabled": false,
+  "gitlens.hovers.annotations.enabled": true,
   "gitlens.views.repositories.files.layout": "tree",
   "gitlens.views.compare.files.layout": "list",
   "gitlens.views.search.files.layout": "list",
@@ -149,4 +187,3 @@
     }
   ],
 }
-
