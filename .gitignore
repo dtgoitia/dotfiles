@@ -67,6 +67,7 @@
 /.thumbnails/
 /.tmux_history
 /.tox/
+/.vagrant.d/
 /.vim/
 /.viminfo
 /.virtualenvs
@@ -82,10 +83,13 @@
 /Desktop/
 /Downloads/
 /Dropbox/
+/dwhelper/
 /ebooks/
 /go/
+/Music/
 /Pictures/
 /projects/
 /Screenshot*
 /Templates/
 /Videos/
+/VirtualBox VMs/
