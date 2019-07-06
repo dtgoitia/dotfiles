@@ -9,6 +9,7 @@
 /.cargo/
 /.cmake
 /.config/
+/.cookiecutter*
 /.dbeaver-drivers/
 /.dbeaver4/
 /.dbus/
@@ -61,6 +62,7 @@
 /.rustup/
 /.sqlite_history
 /.ssh/
+/.swt/
 /.task/
 /.taskrc
 /.terraform.d/
@@ -93,3 +95,6 @@
 /Templates/
 /Videos/
 /VirtualBox VMs/
+
+/*.jpg
+/*.flv
