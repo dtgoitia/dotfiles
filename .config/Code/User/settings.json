@@ -97,13 +97,14 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
   },
-  
-  "javascript.referencesCodeLens.enabled": true,
-
   "python.terminal.activateEnvironment": false,
+
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.suggest.autoImports": true,
 
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
+  "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
 
 
