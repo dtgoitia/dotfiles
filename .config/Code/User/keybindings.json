@@ -56,13 +56,6 @@
     "when": "editorTextFocus"
   },
 
-  // Run task
-  {
-    "key": "ctrl+enter",
-    "command": "workbench.action.tasks.runTask",
-    "when": "editorTextFocus"
-  },
-
   // Navigate
   {
     "key": "alt+left",
@@ -78,7 +71,28 @@
     "key": "ctrl+'",
     "command": "workbench.action.terminal.toggleTerminal"
   },
-  { // disable default setting
+  
+  // GitLens
+  {
+    "key": "ctrl+shift+g g",
+    "command": "workbench.view.extension.gitlens"
+  },
+
+  // vim
+  {
+    "key": "ctrl+shift+v",
+    "command": "toggleVim"
+  },
+
+  // VSCode SCM
+  {
+    "key": "ctrl+shift+g space",
+    "command": "workbench.view.scm",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
+  },
+
+  //  disable default settings
+  {
     "key": "ctrl+`",
     "command": "-workbench.action.terminal.toggleTerminal"
   },
@@ -90,10 +104,9 @@
     "key": "ctrl+shift+'",
     "command": "workbench.action.terminal.new"
   },
-
-  // vim
   {
-    "key": "ctrl+shift+v",
-    "command": "toggleVim"
-  }
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
+  },
 ]
