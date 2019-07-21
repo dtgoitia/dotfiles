@@ -84,10 +84,13 @@ fi
 
 # Powerline
 if [[ "$OSTYPE" == "$LINUX_OS"  ]]; then
-    powerline-daemon -q
-    POWERLINE_BASH_CONTINUATION=1
-    POWERLINE_BASH_SELECT=1
-    . /usr/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh
+    powerline_path="/usr/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh"
+    if [[ -f "$powerline_path"  ]]; then
+        powerline-daemon -q
+        POWERLINE_BASH_CONTINUATION=1
+        POWERLINE_BASH_SELECT=1
+	source "$powerline_path"
+    fi
 fi
 
 # nnn configuration
