@@ -17,8 +17,11 @@ export PATH="$PATH:$HOME/go/bin"                # Go binaries
 export GOPATH="$HOME/go:/tmp/trizen-dtg"        # Go PATH
 
 if [[ "$OSTYPE" == "$LINUX_OS" ]]; then
-    export GEM_HOME=$(ruby -e 'print Gem.user_dir') 	# Bundle configuration
-    export PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin" # TODO: necessary?
+    # Add environment variables if the command "ruby"
+    if [[ -x "$(command -v ruby)" ]]; then
+        export GEM_HOME=$(ruby -e 'print Gem.user_dir') 	# Bundle configuration
+	export PATH="$PATH:$(ruby -e 'print Gem.user_dir')/bin" # TODO: necessary?
+    fi
 fi
 
 # BASH settings
