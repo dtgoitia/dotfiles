@@ -1,3 +1,6 @@
+# Suppress greeting on start
+set fish_greeting
+
 # Load Powerline, otherwise custom prompt
 set powerline_fish_bindings_path "/usr/lib/python3.7/site-packages/powerline/bindings/fish"
 if test -e "$powerline_fish_bindings_path"
