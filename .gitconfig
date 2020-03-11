@@ -17,8 +17,5 @@
   editor = vim
   ignorecase = false
 
-[code]
-  excludesfile = "$HOME\\.gitignore_global"
-
 [diff]
   tool = meld
