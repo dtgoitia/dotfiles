@@ -8,8 +8,8 @@
   co = commit
   st = status
   ps = push
-  pl = push
-  lg = log --oneline --all --graph --decorate
+  pl = pull
+  lg = log --oneline --graph --decorate --all
   unstage = reset HEAD --
   dtgoitia = "!f() { reponame=$1; git clone git@github.com:dtgoitia/${reponame}.git; }; f"
 
