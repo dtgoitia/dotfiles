@@ -25,8 +25,12 @@ function is_work_laptop --description 'return true if current machine is the wor
     end
 end
 
-# Load direnv
-direnv hook fish | source
+# Load direnv if installed
+if type -q direnv
+    direnv hook fish | source
+else
+    echo 'direnv is not installed'
+end
 
 # Load work scripts
 if is_work_laptop
