@@ -1,0 +1,40 @@
+# Disable the newline at the start of the prompt
+add_newline = false
+
+[git_branch]
+symbol = ""
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged.value = "++"
+staged.style = "green"
+staged_count.enabled = true
+staged_count.style = "green"
+renamed = "👅"
+deleted = "🗑"
+
+[kubernetes]
+symbol = "⛵ "
+style = "dim green"
+disabled = true
+
+[nodejs]
+symbol = "🤖 "
+
+[directory]
+truncation_length = 80
+truncate_to_repo = false
+
+[time]
+disabled = false
+format = "%T"
+
+[cmd_duration]
+disabled = true
+
