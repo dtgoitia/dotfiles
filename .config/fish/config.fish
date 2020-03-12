@@ -57,6 +57,9 @@ set -x NNN_USE_EDITOR 1
 set -x VISUAL vim
 set -x NNN_RESTRICT_NAV_OPEN 1
 
+# tmux
+set -x TMUX_SHELL (which fish) # fish has different paths in Linux/MacOS
+
 # Environment variables
 if type -q rust
    set -gx PATH "$HOME/.cargo/bin"   # Rust binaries  
