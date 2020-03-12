@@ -45,8 +45,12 @@ if is_work_laptop
     eval (python3 -m virtualfish)
 end
 
-# Load starship
-starship init fish | source
+# Load starship if installed
+if type -q starship
+    starship init fish | source
+else
+    echo 'starship is not installed'
+end
 
 # nnn
 set -x NNN_USE_EDITOR 1
