@@ -9,6 +9,7 @@ echo "[$(date +%Y-%m-%d" "%T)] .bashrc (linux) file loaded from Dropbox"
 # Constants
 export LINUX_OS="linux-gnu"
 export WINDOWS_OS="msys"
+export MAC_OS="darwin18"
 
 # Environment variables
 export PATH="$HOME/.cargo/bin:$PATH"            # Rust binaries
@@ -212,4 +213,14 @@ if [[ "$OSTYPE" == "$WINDOWS_OS" ]]; then
     
     alias ssh-dtgoitia="setup_ssh"
     alias ssh_dtgoitia="setup_ssh"
+fi
+
+if [[ "$OSTYPE" == "$MAC_OS" ]]; then
+    # Load setup for Babylon Health
+    source "$HOME/.bashrc_babylon"
+fi
+
+# enable starship if available
+if type starship &>/dev/null; then
+    eval "$(starship init bash)"
 fi
