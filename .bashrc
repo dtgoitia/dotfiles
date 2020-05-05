@@ -75,6 +75,7 @@ alias cl='clear'
 alias la='ls -la'
 alias ls='ls --color=auto'
 alias rmd='rm -rf'
+alias pi="ping -i 5 google.com | xargs -L 1 -I '{}' date '+%Y-%m-%d %H:%M:%S: {}'"
 
 # Load fish
 if [[ "$OSTYPE" == "$LINUX_OS"  ]]; then
