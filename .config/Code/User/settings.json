@@ -53,6 +53,7 @@
 
   "workbench.activityBar.visible": false,
   "workbench.colorTheme": "One Dark Pro Bold",
+  "workbench.editor.showTabs": true,
   "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "newUntitledFile",
