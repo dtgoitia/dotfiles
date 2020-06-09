@@ -7,15 +7,16 @@
   "diffEditor.renderSideBySide": true,
   "diffEditor.renderIndicators": true,
 
-  "editor.fontFamily": "'Ubuntu Mono', Consolas, 'Courier New', monospace",
-  "editor.glyphMargin": false,  // get ridd off infrequently used area
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.fontFamily": "'Ubuntu Mono', Consolas, 'Courier New', monospace",
+  // "editor.glyphMargin": false,  // get ridd off infrequently used area
   "editor.hover.delay": 600,
-  "editor.lineNumbers": "off",  // get ridd off infrequently used area
-  "editor.minimap.enabled": false,  // get ridd off infrequently used area
+  // "editor.lineNumbers": "off", // get ridd off infrequently used area
+  "editor.minimap.enabled": false, // get ridd off infrequently used area
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 79, 119 ],
   "editor.showFoldingControls": "mouseover",
-  "editor.folding": false,  // get ridd off infrequently used area
+  // "editor.folding": false,  // get ridd off infrequently used area
   "editor.tabSize": 2,
 
   "explorer.confirmDelete": false,
@@ -38,12 +39,14 @@
   "git.enabled": true,
   "git.enableSmartCommit": false,
 
+  "remote.SSH.showLoginTerminal": true,
+
   "search.showLineNumbers": false,
 
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
 
-  "terminal.integrated.rendererType": "dom",  // https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered
+  "terminal.integrated.rendererType": "dom", // https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered
   "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
   "terminal.integrated.shellArgs.windows": [ "-l" ],
 
@@ -52,15 +55,14 @@
   "window.zoomLevel": 0,
 
   "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "One Dark Pro Bold",
-  "workbench.editor.showTabs": true,
+  "workbench.colorTheme": "One Dark Pro",
   "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "workbench.settings.editor": "json",
+  "workbench.editor.showTabs": true,
+  "workbench.sideBar.location": "left",
   "workbench.startupEditor": "newUntitledFile",
 
   "yaml.format.enable": true,
-
-
 
   // ============================================================================
   //
@@ -68,48 +70,60 @@
   //
   // ============================================================================
 
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
   "[javascript]": {
     "editor.codeLens": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
+    // "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
+  "javascript.referencesCodeLens.enabled": true,
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
   "[json]": {
     "editor.codeLens": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
+
   "[markdown]": {
     "editor.codeLens": false,
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
+    "editor.defaultFormatter": "fcrespo82.markdown-table-formatter",
   },
+
   "[python]": {
     "editor.codeLens": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
   },
+  "python.terminal.activateEnvironment": false,
+
   "[shellscript]": {
     "editor.codeLens": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
+
   "[typescript]": {
     "editor.codeLens": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
-  "python.terminal.activateEnvironment": false,
-
-  "javascript.referencesCodeLens.enabled": true,
-  "javascript.suggest.autoImports": true,
-
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
   "typescript.suggest.autoImports": true,
   "typescript.updateImportsOnFileMove.enabled": "always",
 
-
-  
   // ============================================================================
   //
   //     Extensions
@@ -123,30 +137,82 @@
     "restructuredtext",
     "text",
   ],
+
   "cSpell.userWords": [
     "Ander",
+    "Atlassian",
+    "Checkbase",
     "Cotswolds",
+    "Dragu",
+    "Emre",
+    "Flowbase",
+    "GDPR",
+    "Goitia",
+    "Grafana",
+    "HMRC",
+    "Handley",
+    "Hargrove",
+    "Hindson",
+    "Hsieh",
     "Ibai",
+    "Inderjeet",
+    "Iturricha",
     "Javi",
     "Karolina",
+    "Kartoglu",
     "Kasia",
     "Keepass",
+    "Keren",
+    "Maciulis",
+    "Matei",
+    "Mbps",
+    "Peakon",
+    "Poliamor",
+    "Postgres",
     "Primazo",
+    "React's",
+    "Scrapy",
+    "Teja",
     "Terraform",
+    "Torralba",
+    "UWSGI",
+    "VLAN",
+    "Wadsworth",
     "Wayland",
     "Zopa",
+    "Zuha",
     "aita",
     "algo",
+    "autogestión",
     "cookiecutter",
     "datastore",
     "dtgoitia",
     "ebitda",
+    "hardcoded",
+    "jira",
+    "kanban",
     "kubectl",
     "kubernetes",
+    "macronutrient",
+    "macronutrients",
+    "miniflow",
+    "miniflows",
     "mismeasurement",
+    "parallelization",
+    "performant",
     "pipenv",
+    "poliamorosa",
+    "poliamoroso",
+    "polinormatividad",
     "pytest",
+    "repos",
     "resizeable",
+    "restructuration",
+    "shipcat",
+    "solutionize",
+    "supernode",
+    "supernodes",
+    "tmux",
     "xmonad"
   ],
 
@@ -156,15 +222,19 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.hovers.annotations.enabled": true,
-  "gitlens.views.repositories.files.layout": "tree",
-  "gitlens.views.compare.files.layout": "list",
+  "gitlens.views.compare.files.layout": "tree",
   "gitlens.views.search.files.layout": "list",
 
   "markdown-preview-enhanced.enableExtendedTableSyntax": true,
   "markdown-preview-enhanced.liveUpdate": true,
   "markdown.extension.italic.indicator": "_",
+  "markdown-table-formatter.markdownGrammarScopes": [
+    "markdown",
+    "plaintext"
+  ],
 
-  "remote.SSH.showLoginTerminal": true,
+  // "prettier.configPath": ".prettier.yaml",
+  // "prettier.requireConfig": true,
 
   "scss.validate": false,
 
@@ -172,13 +242,13 @@
 
   "terraform.telemetry.enabled": false,
 
-  "todo-tree.defaultHighlight": {
+  "todo-tree.highlights.defaultHighlight": {
     "foreground": "magenta",
     "type": "tag"
   },
-  "todo-tree.tags": [
+  "todo-tree.general.tags": [
     "TODO",
-    "FIXME",
+    "FIXME"
   ],
 
   "vim.disableExtension": true,
