@@ -254,6 +254,7 @@
     "TODO",
     "FIXME"
   ],
+  "todo-tree.tree.showScanModeButton": false,
 
   "vim.disableExtension": true,
   "vim.insertModeKeyBindings": [
