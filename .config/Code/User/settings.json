@@ -227,6 +227,8 @@
   "gitlens.views.compare.files.layout": "tree",
   "gitlens.views.search.files.layout": "list",
 
+  "insertDateString.format": "YYYY-MM-DD",
+
   "markdown-preview-enhanced.enableExtendedTableSyntax": true,
   "markdown-preview-enhanced.liveUpdate": true,
   "markdown.extension.italic.indicator": "_",
