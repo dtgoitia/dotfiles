@@ -71,7 +71,7 @@
     "key": "ctrl+'",
     "command": "workbench.action.terminal.toggleTerminal"
   },
-  
+
   // GitLens
   {
     "key": "ctrl+shift+g g",
