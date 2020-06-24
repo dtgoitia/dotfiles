@@ -104,6 +104,7 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
   },
+  "python.insidersChannel": "daily",
   "python.terminal.activateEnvironment": false,
 
   "[shellscript]": {
