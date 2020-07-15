@@ -40,9 +40,6 @@ if is_work_laptop
     else
         echo '>>> I cannot find Babylon specific fish config'
     end
-
-    # Load virtualfish (virtualenvwrapper alternative)
-    eval (python3 -m virtualfish)
 end
 
 # Load starship if installed
