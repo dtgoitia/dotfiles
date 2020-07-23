@@ -101,9 +101,12 @@
 
   "[python]": {
     "editor.codeLens": true,
+    "editor.defaultFormatter": "black",
+    "editor.formatOnSave": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
   },
+  "python.formatting.blackPath": "black",
   "python.insidersChannel": "daily",
   "python.terminal.activateEnvironment": false,
 
@@ -270,4 +273,5 @@
       "after": [ "<Esc>" ],
     }
   ],
+  "python.formatting.provider": "black",
 }
