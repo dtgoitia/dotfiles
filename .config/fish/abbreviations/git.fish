@@ -1,5 +1,5 @@
 abbr --add g 'git' # Use 'g' as git (you still can use 'git')
-abbr --add gs 'git status'
+abbr --add gs 'git status -s'
 abbr --add ga 'git add'
 abbr --add gc 'git commit'
 abbr --add gpl 'git pull'
