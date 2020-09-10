@@ -24,6 +24,7 @@
   "explorer.openEditors.visible": 0,
 
   "extensions.autoUpdate": false,
+  "extensions.ignoreRecommendations": false,
 
   "files.exclude": {
     "**/.DS_Store": true,
