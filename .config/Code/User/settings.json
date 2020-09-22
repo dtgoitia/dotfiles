@@ -6,8 +6,6 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": true,
   "diffEditor.renderIndicators": true,
-
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   // "editor.fontFamily": "'Ubuntu Mono', Consolas, 'Courier New', monospace",
   // "editor.glyphMargin": false,  // get ridd off infrequently used area
   "editor.hover.delay": 600,
@@ -102,7 +100,6 @@
 
   "[python]": {
     "editor.codeLens": true,
-    "editor.defaultFormatter": "black",
     "editor.formatOnSave": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
