@@ -10,11 +10,21 @@ node_modules/
 
 # Python
 __pycache__/
+*.pyc
 .pytest_cache/
 .tox/
 *.egg-info/
 .venv/
+.mypy_cache/
 
 # PyCharm
 .idea/
+
+# Mac OS files
+.DS_Store
+.DS_Store?
+*.swp
+
+# Windows OS files
+Thumbs.db
 
