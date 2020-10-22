@@ -4,12 +4,12 @@
 #
 # =============================================================================
 
-echo "[$(date +%Y-%m-%d" "%T)] .bashrc (linux) file loaded from Dropbox"
+echo "[$(date +%Y-%m-%d" "%T)] loading $BASH_SOURCE"
 
 # Constants
 export LINUX_OS="linux-gnu"
 export WINDOWS_OS="msys"
-export MAC_OS="darwin18"
+export MAC_OS="darwin*" # darwin18, darwin19, etc.
 
 # Environment variables
 export PATH="$HOME/.cargo/bin:$PATH"            # Rust binaries
@@ -17,7 +17,7 @@ export PATH="$HOME/.gem/ruby/2.5.0/bin:$PATH"   # Ruby binaries
 export PATH="$PATH:$HOME/go/bin"                # Go binaries
 export GOPATH="$HOME/go:/tmp/trizen-dtg"        # Go PATH
 
-if [[ "$OSTYPE" == "$LINUX_OS" ]]; then
+if [[ $OSTYPE == $LINUX_OS ]]; then
     # Add environment variables if the command "ruby"
     if [[ -x "$(command -v ruby)" ]]; then
         export GEM_HOME=$(ruby -e 'print Gem.user_dir') 	# Bundle configuration
@@ -39,7 +39,7 @@ if [[ -n "$BASH" ]]; then
 fi
 
 # If Linux, load tmux and abort current file loading
-if [[ "$OSTYPE" == "$LINUX_OS" ]]; then
+if [[ $OSTYPE == $LINUX_OS ]]; then
     tmux
 fi
 
@@ -57,10 +57,10 @@ alias gf='git fetch --all --prune'
 alias gl='git log --oneline --all --graph --decorate'
 
 # Applications
-if [[ "$OSTYPE" == "$LINUX_OS"  ]]; then
+if [[ $OSTYPE == $LINUX_OS  ]]; then
     alias np='vim'
     alias e='nautilus .'
-elif [[ "$OSTYPE" == "$WINDOWS_OS"  ]]; then
+elif [[ $OSTYPE == $WINDOWS_OS  ]]; then
     alias e='explorer'
     alias browser='firefox'
     alias notepad='"C:\Program Files (x86)\Notepad++\notepad++.exe"'
@@ -78,14 +78,14 @@ alias rmd='rm -rf'
 alias pi="ping -i 5 google.com | xargs -L 1 -I '{}' date '+%Y-%m-%d %H:%M:%S: {}'"
 
 # Load fish
-if [[ "$OSTYPE" == "$LINUX_OS"  ]]; then
+if [[ $OSTYPE == $LINUX_OS  ]]; then
     alias np='vim'
     alias e='nautilus .'
     alias ff='exec fish'
 fi
 
 # Powerline
-if [[ "$OSTYPE" == "$LINUX_OS"  ]]; then
+if [[ $OSTYPE == $LINUX_OS  ]]; then
     powerline_path="/usr/lib/python3.7/site-packages/powerline/bindings/bash/powerline.sh"
     if [[ -f "$powerline_path"  ]]; then
         powerline-daemon -q
@@ -96,14 +96,14 @@ if [[ "$OSTYPE" == "$LINUX_OS"  ]]; then
 fi
 
 # nnn configuration
-if [[ "$OSTYPE" == "$LINUX_OS"  ]]; then
+if [[ $OSTYPE == $LINUX_OS  ]]; then
     export NNN_USE_EDITOR=1
     export VISUAL=vim
     export NNN_RESTRICT_NAV_OPEN=1
 fi
 
 # SSH
-if [[ "$OSTYPE" == "$WINDOWS_OS" ]]; then
+if [[ $OSTYPE == $WINDOWS_OS ]]; then
     export DTG_SSH_KEY_PATH="$HOME/.ssh/id_rsa_dtgoitia"
     indent="  >"
 
@@ -216,7 +216,7 @@ if [[ "$OSTYPE" == "$WINDOWS_OS" ]]; then
     alias ssh_dtgoitia="setup_ssh"
 fi
 
-if [[ "$OSTYPE" == "$MAC_OS" ]]; then
+if [[ $OSTYPE == $MAC_OS ]]; then
     # Load setup for Babylon Health
     source "$HOME/.bashrc_babylon"
 fi
