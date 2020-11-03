@@ -20,11 +20,15 @@ __pycache__/
 # PyCharm
 .idea/
 
-# Mac OS files
+# Mac OS
 .DS_Store
 .DS_Store?
 *.swp
+/Applications/
+/Documents/
+/Library/
+/Movies/
+/Public/
 
-# Windows OS files
+# Windows OS
 Thumbs.db
-
