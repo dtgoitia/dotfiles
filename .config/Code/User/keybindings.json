@@ -91,6 +91,12 @@
     "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
   },
 
+  // Insert date
+  {
+    "key": "cmd+shift+i",
+    "command": "insertDateString.insertDate"
+  },
+
   //  disable default settings
   {
     "key": "ctrl+`",
