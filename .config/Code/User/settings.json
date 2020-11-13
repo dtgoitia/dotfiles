@@ -65,7 +65,7 @@
   "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "workbench.settings.editor": "json",
   "workbench.editor.showTabs": true,
-  "workbench.sideBar.location": "left",
+  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
 
   "yaml.format.enable": true,
