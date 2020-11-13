@@ -41,6 +41,13 @@
   "remote.SSH.showLoginTerminal": true,
 
   "search.showLineNumbers": false,
+  "search.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/.venv": true
+  },
 
   "telemetry.enableCrashReporter": false,
   "telemetry.enableTelemetry": false,
