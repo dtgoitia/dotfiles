@@ -12,4 +12,4 @@ abbr --add pi "ping 8.8.4.4 | xargs -L 1 -I '{}' date '+%Y-%m-%d %H:%M:%S {}'"
 abbr --add au aurman -Syu
 abbr --add aun aurman -Syu --noconfirm
 
-abbr --add cod code-insiders
+abbr --add co code-insiders .
