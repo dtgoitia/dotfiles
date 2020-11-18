@@ -19,3 +19,5 @@
 
 [diff]
   tool = meld
+[clean]
+	requireForce = false
