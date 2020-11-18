@@ -46,7 +46,7 @@
     "**/node_modules": true,
     "**/bower_components": true,
     "**/*.code-search": true,
-    "**/.venv": true
+    "**/.venv": true,
   },
 
   "telemetry.enableCrashReporter": false,
