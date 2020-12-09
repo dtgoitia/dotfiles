@@ -15,11 +15,10 @@
 	"PR": {
 		"prefix": "pr",
 		"body": [
-			"- [PR](https://github.com/babylonhealth/product-tests/pull/$1)",
-			"  - [ ] Create PR.",
-			"  - [ ] Ask CR.",
+			"- [PR]($1)",
+			"  - [x] Create PR.",
+			"  - [$2] Ask CR.",
 			"  - [ ] Merge PR.",
-			"$0"
 		],
 		"description": "Pull request record for the job log."
 	}
