@@ -115,3 +115,7 @@ set ttimeoutlen=1
 " Exit INSERT mode
 inoremap jj <Esc>
 
+" Indentation
+setlocal expandtab      " insert spaces on tab
+setlocal shiftwidth=2   " insert 2 spaces on `>>` and `<<`
+setlocal softtabstop=2  " insert 2 spaces on tab (needs expandtab)
