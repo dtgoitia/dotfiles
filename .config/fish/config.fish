@@ -13,7 +13,7 @@ set fish_greeting
 # Load abbreviations
 source ~/.config/fish/abbreviations/general.fish
 source ~/.config/fish/abbreviations/git.fish
-# source ~/.config/fish/abbreviations/vcsh.fish
+source ~/.config/fish/abbreviations/vcsh.fish
 source ~/.config/fish/abbreviations/fish.fish
 
 function is_work_laptop --description 'return true if current machine is the work laptop'
