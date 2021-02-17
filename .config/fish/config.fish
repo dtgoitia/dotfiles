@@ -39,7 +39,7 @@ if is_work_laptop
     if test -e $babylon_fish_config
         source $babylon_fish_config
     else
-        echo '>>> I cannot find Babylon specific fish config'
+        echo '>>> I cannot find the Babylon-specific fish config'
     end
 end
 
