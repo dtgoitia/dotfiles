@@ -38,6 +38,9 @@ if [[ -n "$BASH" ]]; then
     }
 fi
 
+# tmux settings
+export TMUX_SHELL=$(which fish)  # tmux reads this env var to pick the default shell
+
 # If Linux, load tmux and abort current file loading
 if [[ $OSTYPE == $LINUX_OS ]]; then
     tmux
