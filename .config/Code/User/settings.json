@@ -12,7 +12,7 @@
   // "editor.lineNumbers": "off", // get ridd off infrequently used area
   "editor.minimap.enabled": false, // get ridd off infrequently used area
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [ 79, 119 ],
+  "editor.rulers": [ 88, 119 ],
   "editor.showFoldingControls": "mouseover",
   // "editor.folding": false,  // get ridd off infrequently used area
   "editor.tabSize": 2,
