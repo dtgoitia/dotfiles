@@ -32,3 +32,6 @@ __pycache__/
 
 # Windows OS
 Thumbs.db
+
+# SQLite databases
+*.db
