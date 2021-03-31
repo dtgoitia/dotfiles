@@ -319,8 +319,13 @@
   },
   "todo-tree.general.tags": [
     "TODO",
-    "FIXME"
+    "ToDo",
+    "FIXME",
+    "WIP",
+    "[ ]",
+    "[x]"
   ],
+  // "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "todo-tree.tree.showScanModeButton": false,
 
   "vim.disableExtension": false,
