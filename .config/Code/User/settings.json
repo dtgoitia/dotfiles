@@ -324,6 +324,7 @@
   "todo-tree.tree.showScanModeButton": false,
 
   "vim.disableExtension": false,
+  "vim.foldfix": true,
   "vim.insertModeKeyBindings": [
     {
       "before": [ "j", "j" ],
