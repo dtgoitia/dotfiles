@@ -302,6 +302,8 @@
 
   "insertDateString.format": "YYYY-MM-DD",
 
+  "jupyter.askForKernelRestart": false,
+
   "markdown-preview-enhanced.enableExtendedTableSyntax": true,
   "markdown-preview-enhanced.liveUpdate": true,
   "markdown.extension.italic.indicator": "_",
