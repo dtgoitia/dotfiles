@@ -5,19 +5,15 @@ add_newline = false
 symbol = ""
 
 [git_status]
-conflicted = "🏳"
-ahead = "🏎💨"
-behind = "😰"
-diverged = "😵"
-untracked = "🤷‍"
-stashed = "📦"
-modified = "📝"
-staged.value = "++"
-staged.style = "green"
-staged_count.enabled = true
-staged_count.style = "green"
-renamed = "👅"
-deleted = "🗑"
+conflicted = "CONFLICT"
+ahead = "[⇡${count}](blue) "
+behind = "[⇣${count}](blue) "
+diverged = "[⇡${ahead_count} ⇣${behind_count}](blue)"
+untracked = "${count}? "
+modified = " ${count}m "
+staged = "[${count}++](green) "
+renamed = "${count}r "
+deleted = "${count}✘ "
 
 [kubernetes]
 symbol = "⛵ "
@@ -37,4 +33,3 @@ format = "$time"
 
 [cmd_duration]
 disabled = true
-
