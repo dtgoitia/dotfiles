@@ -13,3 +13,5 @@ abbr --add au aurman -Syu
 abbr --add aun aurman -Syu --noconfirm
 
 abbr --add co code-insiders .
+
+abbr --add dro cd ~/Dropbox/projects-dropbox
