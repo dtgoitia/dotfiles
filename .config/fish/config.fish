@@ -59,10 +59,13 @@ set -x NNN_RESTRICT_NAV_OPEN 1
 set -x TMUX_SHELL (which fish) # fish has different paths in Linux/MacOS
 
 # Environment variables
+# PATH docs: http://fishshell.com/docs/current/tutorial.html#path
+# To print paths in PATH in fishshell, run `printf "%s\n" $PATH`
+fish_add_path "$HOME/Dropbox/projects-dropbox/scripts"  # Custom scripts
 if type -q rust
-   set -gx PATH "$HOME/.cargo/bin"   # Rust binaries  
+   fish_add_path "$HOME/.cargo/bin"     # Rust binaries
 end
 if type -q go
-    set -gx PATH $PATH "$HOME/go/bin"   # Go binaries
+    fish_add_path "$HOME/go/bin"        # Go binaries
     set -gx GOPATH "$HOME/go"           # Go PATH
 end
