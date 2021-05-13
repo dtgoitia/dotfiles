@@ -15,3 +15,5 @@ abbr --add aun aurman -Syu --noconfirm
 abbr --add co code-insiders .
 
 abbr --add dro cd ~/Dropbox/projects-dropbox
+
+abbr --add fitness code-insiders ~/Dropbox/projects-dropbox/health/fitness
