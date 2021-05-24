@@ -1,0 +1,19 @@
+########################################################################################
+##                                                                                    ##
+##  Installation is a 2 step process:                                                 ##
+##                                                                                    ##
+##   1. Use `install_custom_crontab` to generate crontab from template and save it    ##
+##      into my dotfiles directory.                                                   ##
+##                                                                                    ##
+##   2. Create a symlink where `cron` expects its crontab files (/etc/crontab) and    ##
+##      make it point to the generated crontab (requires sudo).                       ##
+##                                                                                    ##
+########################################################################################
+#
+# use /bin/sh to run commands, overriding the default set by cron
+SHELL=/bin/bash
+#
+MAILTO="INSERT_USERNAME_HERE"
+#
+# My cron jobs:
+*/2 * * * * INSERT_USERNAME_HERE $HOME/Dropbox/projects-dropbox/scripts/nhs_vaccine.py >> $HOME/Dropbox/projects-dropbox/scripts/nhs_vaccine.py.log 2>&1
