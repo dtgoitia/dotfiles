@@ -69,3 +69,6 @@ if type -q go
     fish_add_path "$HOME/go/bin"        # Go binaries
     set -gx GOPATH "$HOME/go"           # Go PATH
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/david.torralba/google-cloud-sdk/path.fish.inc' ]; . '/Users/david.torralba/google-cloud-sdk/path.fish.inc'; end
