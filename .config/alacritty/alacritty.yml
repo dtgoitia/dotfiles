@@ -1,0 +1,11 @@
+# https://github.com/alacritty/alacritty#configuration
+
+window:
+# Window padding
+#
+# Blank space added around the window in pixels. This padding is not scaled
+# by DPI and the specified value is always added at both opposing sides.
+  padding:
+    x: 10
+    y: 4
+
