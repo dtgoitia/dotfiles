@@ -305,9 +305,13 @@
   "gitlens.advanced.telemetry.enabled": false,
   "gitlens.codeLens.enabled": false,
   "gitlens.hovers.annotations.enabled": true,
+  "gitlens.views.branches.avatars": false,
   "gitlens.views.branches.branches.layout": "list",
+  "gitlens.views.branches.pullRequests.enabled": false,
+  "gitlens.views.branches.pullRequests.showForBranches": false,
   "gitlens.views.compare.files.layout": "tree",
   "gitlens.views.search.files.layout": "list",
+  "gitlens.views.showRelativeDateMarkers": false,
 
   "insertDateString.format": "YYYY-MM-DD",
 
