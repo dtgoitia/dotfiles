@@ -10,7 +10,7 @@
 ##                                                                                    ##
 ########################################################################################
 #
-# use /bin/sh to run commands, overriding the default set by cron
+# use /bin/bash to run commands, overriding the default set by cron
 SHELL=/bin/bash
 #
 MAILTO="INSERT_USERNAME_HERE"
