@@ -1,3 +1,15 @@
+# Git
+.git/
+
+# Python
+.venv/
+.pytest_cache/
+
+# Direnv
+.env
+.envrc
+
+# This file assumes that it is at the user's home directory
 /.android/
 /.angular-config.json
 /.atom/
@@ -8,7 +20,6 @@
 /.cache/
 /.cargo/
 /.cmake
-/.config/
 /.cookiecutter*
 /.dbeaver-drivers/
 /.dbeaver4/
