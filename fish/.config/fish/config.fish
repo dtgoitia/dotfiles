@@ -13,7 +13,6 @@ set fish_greeting
 # Load abbreviations
 source ~/.config/fish/abbreviations/general.fish
 source ~/.config/fish/abbreviations/git.fish
-source ~/.config/fish/abbreviations/vcsh.fish
 source ~/.config/fish/abbreviations/fish.fish
 source ~/.config/fish/abbreviations/python.fish
 
