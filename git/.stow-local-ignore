@@ -1,0 +1,6 @@
+# GNU stow ignore .gitignore files by default. This file overrides the default "ignore"
+# rules for this directory.
+# http://www.gnu.org/software/stow/manual/html_node/Types-And-Syntax-Of-Ignore-Lists.html
+
+\.git
+# \.gitignore
