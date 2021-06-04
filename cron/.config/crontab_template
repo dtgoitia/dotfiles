@@ -19,3 +19,4 @@ MAILTO="INSERT_USERNAME_HERE"
 */2 * * * * INSERT_USERNAME_HERE $HOME/Dropbox/projects-dropbox/scripts/nhs_vaccine.py >> $HOME/Dropbox/projects-dropbox/scripts/nhs_vaccine.py.log 2>&1
 0 * * * * INSERT_USERNAME_HERE $HOME/Dropbox/projects-dropbox/scripts/update_manifests.py >> $HOME/Dropbox/projects-dropbox/scripts/update_manifests.py.log 2>&1
 0 * * * * INSERT_USERNAME_HERE $HOME/Dropbox/projects-dropbox/scripts/find_outdated_brew_packages.py >> $HOME/Dropbox/projects-dropbox/scripts/find_outdated_brew_packages.py.log 2>&1
+0 */3 * * * INSERT_USERNAME_HERE $HOME/Dropbox/projects-dropbox/scripts/backup_vscode_extensions.py >> $HOME/Dropbox/projects-dropbox/scripts/backup_vscode_extensions.py.log 2>&1
