@@ -1,3 +1,5 @@
+# Stow will not create symlinks pointing to any file that matches these patterns.
+#
 # GNU stow ignore .gitignore files by default. This file overrides the default "ignore"
 # rules for this directory.
 # http://www.gnu.org/software/stow/manual/html_node/Types-And-Syntax-Of-Ignore-Lists.html
