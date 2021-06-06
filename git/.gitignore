@@ -4,6 +4,8 @@
 # Python
 .venv/
 .pytest_cache/
+__pycache__/
+*.py[cod]
 
 # Direnv
 .env
