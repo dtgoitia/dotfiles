@@ -40,6 +40,8 @@
 
   "remote.SSH.showLoginTerminal": true,
 
+  "security.workspace.trust.enabled": false,
+
   "search.showLineNumbers": false,
   "search.exclude": {
     "**/.git": true,
