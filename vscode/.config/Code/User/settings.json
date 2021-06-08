@@ -67,6 +67,9 @@
   "workbench.iconTheme": "eq-material-theme-icons-palenight",
   "workbench.settings.editor": "json",
   "workbench.editor.showTabs": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "newUntitledFile",
 
@@ -326,6 +329,11 @@
     "markdown",
     "plaintext"
   ],
+
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
 
   // "prettier.configPath": ".prettier.yaml",
   // "prettier.requireConfig": true,
