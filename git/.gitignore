@@ -11,6 +11,9 @@ __pycache__/
 .env
 .envrc
 
+# Node
+node_modules/
+
 # This file assumes that it is at the user's home directory
 /.android/
 /.angular-config.json
