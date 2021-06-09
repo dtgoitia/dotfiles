@@ -332,6 +332,25 @@
     "plaintext"
   ],
 
+  "markdown-contacts.names": [
+    "AngelaSantin",
+    "ArgyriosGounaris",
+    "BenKnowles",
+    "CarlosFerreira",
+    "DavidTorralba",
+    "DouglasHindson",
+    "EyalKazin",
+    "GuysLeaver",
+    "JamesStrong",
+    "KalyanTeja",
+    "LeszekKowalczuk",
+    "LorenzoBarasti",
+    "MateiDragu",
+    "MaxZwiessele",
+    "RupertBedford",
+    "ThemisSavvidis",
+  ],
+
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "left"
