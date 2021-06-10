@@ -21,5 +21,33 @@
 			"  - [ ] Merge PR.",
 		],
 		"description": "Pull request record for the job log."
-	}
+	},
+	"Meeting": {
+		"prefix": "meeting",
+		"body": [
+			"## TITLE",
+			"",
+			"Date: $1",
+			"",
+			"Attendees:",
+			"",
+			"  - @DavidTorralba",
+			"  - ?",
+			"",
+			"## Prior to meeting",
+			"",
+			"...",
+			"",
+			"## Meeting invite",
+			"",
+			"...",
+			"",
+			"## Meeting minutes",
+			"",
+			"<!-- External references -->",
+			"",
+			"[1]: ___ \"___\"",
+		],
+		"description": "Pull request record for the job log."
+	},
 }
