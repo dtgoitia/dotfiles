@@ -25,7 +25,7 @@
 	"Meeting": {
 		"prefix": "meeting",
 		"body": [
-			"## TITLE",
+			"# TITLE",
 			"",
 			"Date: $1",
 			"",
