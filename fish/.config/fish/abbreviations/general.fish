@@ -1,11 +1,11 @@
+set DROPBOX_DIR "~/Dropbox/projects-dropbox"
+
 abbr --add rmd rm -rf
 
 abbr --add e nautilus
 abbr --add cl clear
 abbr --add clr clear
 abbr --add cls clear
-
-abbr --add e nautilus
 
 abbr --add pi "ping 8.8.4.4 | xargs -L 1 -I '{}' date '+%Y-%m-%d %H:%M:%S {}'"
 
@@ -14,7 +14,8 @@ abbr --add aun "aurman -Syu --noconfirm"
 
 abbr --add co "code-insiders ."
 
-abbr --add dro "cd ~/Dropbox/projects-dropbox"
-abbr --add wip "code-insiders ~/Dropbox/projects-dropbox/WIP_TODOS.md"
-
-abbr --add fitness "code-insiders ~/Dropbox/projects-dropbox/health/fitness"
+abbr --add dro "cd $DROPBOX_DIR"
+abbr --add travel "cd $DROPBOX_DIR/travelling"
+abbr --add health "cd $DROPBOX_DIR/health"
+abbr --add wip "code-insiders $DROPBOX_DIR/WIP_TODOS.md"
+abbr --add fitness "code-insiders $DROPBOX_DIR/health/fitness"
