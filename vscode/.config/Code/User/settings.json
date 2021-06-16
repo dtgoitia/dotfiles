@@ -392,7 +392,6 @@
     "[x]"
   ],
   // "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "todo-tree.tree.showScanModeButton": false,
 
   "vim.disableExtension": false,
   "vim.foldfix": true,
