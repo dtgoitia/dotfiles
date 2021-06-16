@@ -14,6 +14,9 @@ __pycache__/
 # Node
 node_modules/
 
+# Visual Studio Code
+.vscode/
+
 # This file assumes that it is at the user's home directory
 /.android/
 /.angular-config.json
