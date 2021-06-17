@@ -1,4 +1,4 @@
-set DROPBOX_DIR "~/Dropbox/projects-dropbox"
+set DROPBOX_DIR "$HOME/Dropbox/projects-dropbox"
 
 abbr --add rmd rm -rf
 
