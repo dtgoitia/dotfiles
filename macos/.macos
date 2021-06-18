@@ -1,0 +1,115 @@
+#!/usr/bin/env bash
+
+# Inspired by https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+
+# Close any open System Preferences panes, to prevent them from overriding
+# settings we’re about to change
+osascript -e 'tell application "System Preferences" to quit'
+
+# Ask for the administrator password upfront
+sudo -v
+
+###############################################################################
+# General UI/UX                                                               #
+###############################################################################
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
+# Disable the “Are you sure you want to open this application?” dialog
+defaults write com.apple.LaunchServices LSQuarantine -bool false
+
+###############################################################################
+# Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
+###############################################################################
+
+# Set language
+defaults write NSGlobalDomain AppleLanguages "( en-GB, es-ES)"
+
+# Disable "Natural" scroll direction
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+# Disable flashing the screen when an alert sound occurs (accessibility)
+defaults write NSGlobalDomain com.apple.sound.beep.flash -bool false
+
+# Set keyboard "Key Repeat" to be as fast as possible
+defaults write NSGlobalDomain KeyRepeat 2
+
+# Set keyboard "Delay Until Repeat" to be as short as possible
+defaults write NSGlobalDomain InitialKeyRepeat 35
+
+# Disable key repeat
+defaults write com.apple.Accessibility KeyRepeatEnabled 0
+
+# Disable voice over touch
+defaults write com.apple.Accessibility VoiceOverTouchEnabled 0
+
+###############################################################################
+# Energy saving                                                               #
+###############################################################################
+
+# Disable display sleep timer
+sudo pmset -a displaysleep 0
+sudo pmset -a halfdim 0
+
+###############################################################################
+# Finder                                                                      #
+###############################################################################
+
+# Show icons for hard drives, servers, and removable media on the desktop
+defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
+defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
+defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
+# Finder: show hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool true
+
+# Finder: show all filename extensions
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Finder: show status bar
+defaults write com.apple.finder ShowStatusBar -bool true
+
+# Finder: show path bar
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Display full POSIX path as Finder window title
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
+
+# Keep folders on top when sorting by name
+defaults write com.apple.finder _FXSortFoldersFirst -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+###############################################################################
+# Dock, Dashboard, and hot corners                                            #
+###############################################################################
+
+# Automatically hide the dock
+defaults write com.apple.dock autohide -bool true
+
+# Set dock size
+defaults write com.apple.dock largesize 40
+
+# Set dock tile size
+defaults write com.apple.dock tilesize 28
+
+###############################################################################
+# Kill affected applications                                                  #
+###############################################################################
+
+for app in "Dock" \
+	"Finder" \
+	"SizeUp" \
+	"Spectacle" \
+	"SystemUIServer"; do
+	killall "${app}" &> /dev/null
+done
+
+echo "Done. Note that some of these changes require a logout/restart to take effect."
