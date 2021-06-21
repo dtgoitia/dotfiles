@@ -47,7 +47,6 @@ if [[ $OSTYPE == $LINUX_OS ]]; then
 fi
 
 # Git
-complete -o default -o nospace -F _git g # Autocomplete for 'g' as well
 alias g='git' # Use 'g' as git (you still can use 'git')
 alias gs='git status'
 alias ga='git add'
