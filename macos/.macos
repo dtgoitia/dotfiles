@@ -34,6 +34,7 @@ defaults write NSGlobalDomain com.apple.sound.beep.flash -bool false
 
 # Set keyboard "Key Repeat" to be as fast as possible
 defaults write NSGlobalDomain KeyRepeat 2
+defaults write -g ApplePressAndHoldEnabled -bool true
 
 # Set keyboard "Delay Until Repeat" to be as short as possible
 defaults write NSGlobalDomain InitialKeyRepeat 35
