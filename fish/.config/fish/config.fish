@@ -70,4 +70,10 @@ if type -q go
 end
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/david.torralba/google-cloud-sdk/path.fish.inc' ]; . '/Users/david.torralba/google-cloud-sdk/path.fish.inc'; end
+if [ -f "$HOME/google-cloud-sdk/path.fish.inc" ]
+    # official curl+bash script installation
+    . "$HOME/google-cloud-sdk/path.fish.inc"
+else if [ -f (brew --prefix)"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc" ]
+    # brew installation
+    . (brew --prefix)"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+end
