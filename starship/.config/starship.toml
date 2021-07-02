@@ -33,3 +33,8 @@ format = "$time"
 
 [cmd_duration]
 disabled = true
+
+[hostname]
+ssh_only = false
+format =  "[$hostname](dimmed) "
+disabled = false
