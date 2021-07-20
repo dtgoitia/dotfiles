@@ -22,7 +22,7 @@
   tool = meld
 
 [clean]
-	requireForce = false
+  requireForce = false
 
 [pull]
-	ff = only  # fast-forward only
+  ff = only  # fast-forward only
