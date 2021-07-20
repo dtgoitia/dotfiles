@@ -31,3 +31,6 @@
   added = blue
   changed = yellow
   untracked = red
+
+[push]
+  default = current
