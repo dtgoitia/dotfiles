@@ -16,7 +16,7 @@
 [core]
   editor = vim
   ignorecase = false
-  excludesFile = /Users/david.torralba/.gitignore
+  excludesFile = ~/.gitignore
 
 [diff]
   tool = meld
