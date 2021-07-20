@@ -35,5 +35,8 @@
 [push]
   default = current
 
+[submodule]
+  recurse = true
+
 [fetch]
   prune = true
