@@ -19,6 +19,27 @@
       "entries": ["Coding", "Study coding"]
     },
     {
+      "id": 171740062,
+      "name": "hiru",
+      "entries": [
+        "Admin",
+        "General",
+        "Meeting",
+        "Interview"
+      ]
+    },
+    {
+      "id": 171908171,
+      "name": "Wiserfunding",
+      "entries": [
+        "Code review",
+        "Coding",
+        "General",
+        "Meeting",
+        "Pairing"
+      ]
+    },
+    {
       "id": 107456600,
       "name": "Health and training",
       "entries": ["Meditate", "Training", "Stretching"]
