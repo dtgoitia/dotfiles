@@ -28,8 +28,8 @@
   ff = only  # fast-forward only
 
 [color "status"]
-  added = blue
-  changed = yellow
+  added = yellow
+  changed = red
   untracked = red
 
 [push]
