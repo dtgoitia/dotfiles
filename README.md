@@ -22,10 +22,10 @@ Use `.gitignore` files to avoid saving directories or paths to the `dotfiles` re
 
 ### Cheat sheet
 
-Remove symlinks: `stow --delete my_package`
-Dry run: `stow --simulate`
-Verbose mode: `stow --verbose`
-Very verbose mode: `stow -vvvvv`
+* Remove symlinks: `stow --delete my_package`
+* Dry run: `stow --simulate`
+* Verbose mode: `stow --verbose`
+* Very verbose mode: `stow -vvvvv`
 
 <!-- External references -->
 
