@@ -16,6 +16,14 @@ source ~/.config/fish/abbreviations/git.fish
 source ~/.config/fish/abbreviations/fish.fish
 source ~/.config/fish/abbreviations/python.fish
 
+function is_mac --description 'return true if current machine is a Mac'
+    if [ (uname) = "Darwin" ]
+        return 0
+    else
+        return 1
+    end
+end
+
 function is_work_laptop --description 'return true if current machine is the work laptop'
     set work_user 'david.torralba'
     if [ $USER = $work_user ]
@@ -70,10 +78,12 @@ if type -q go
 end
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f "$HOME/google-cloud-sdk/path.fish.inc" ]
-    # official curl+bash script installation
-    . "$HOME/google-cloud-sdk/path.fish.inc"
-else if [ -f (brew --prefix)"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc" ]
-    # brew installation
-    . (brew --prefix)"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+if is_mac
+    if [ -f "$HOME/google-cloud-sdk/path.fish.inc" ]
+        # official curl+bash script installation
+        . "$HOME/google-cloud-sdk/path.fish.inc"
+    else if [ -f (brew --prefix)"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc" ]
+        # brew installation
+        . (brew --prefix)"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+    end
 end
