@@ -6,7 +6,7 @@ Mac config files are in a different folder, create a symbolic link:
 
 ```shell
 # first you might need to remove the existing folder
-rm -rf "$HOME/Library/Application Support/Code - Insiders/"
+rm -rf "$HOME/Library/Application Support/Code - Insiders/User"
 ln -s "$HOME/.config/Code - Insiders/User/" "$HOME/Library/Application Support/Code - Insiders/User"
 
 # check the link was created correctly
