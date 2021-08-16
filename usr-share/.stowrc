@@ -1,0 +1,6 @@
+# CAVEAT: stow ignores configuration in ~/.stowrc instead of extending it
+
+# This will require root privileges
+--target=/usr/share
+
+-vv  # Always enable 2 levels of verbosity
