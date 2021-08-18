@@ -11,6 +11,7 @@
   "editor.hover.delay": 600,
   // "editor.lineNumbers": "off", // get ridd off infrequently used area
   "editor.minimap.enabled": false, // get ridd off infrequently used area
+  "editor.mouseWheelScrollSensitivity": -1,  // to flip the scroll direction
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 88, 119 ],
   "editor.showFoldingControls": "mouseover",
