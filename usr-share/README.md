@@ -1,4 +1,10 @@
-# Configurations under `/usr/share<>
+# Configurations under `/usr/share`
+
+## Keyboard remapping
+
+**IMPORTANT: Use the `install.sh` script. The instructions below fail, not sure yet why.**
+
+**IMPORTANT 2: ensure the US, ES and GB keyboard layouts are enabled in GNOME, else it won't work.**
 
 These stow packages will use `/usr/share` as their [_target directory_][2].
 
