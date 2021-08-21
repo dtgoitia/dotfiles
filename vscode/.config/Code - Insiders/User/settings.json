@@ -323,6 +323,10 @@
 
   "vim.disableExtension": false,
   "vim.foldfix": true,
+  "vim.handleKeys": {
+    "<C-b>": false,  // Let VSCode open/close side bar
+    "<C-q>": false,  // Let VScode exit
+  },
   "vim.insertModeKeyBindings": [
     {
       "before": [ "j", "j" ],
