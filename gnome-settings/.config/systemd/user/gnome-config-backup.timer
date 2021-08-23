@@ -1,0 +1,13 @@
+[Unit]
+Description=GNOME configuration backup
+Requires=gnome-config-backup.service
+
+[Timer]
+Unit=gnome-config-backup.service
+OnCalendar=*:00:00
+
+[Install]
+WantedBy=timers.target
+
+# More info here
+# https://wiki.archlinux.org/title/Systemd/Timers#As_a_cron_replacement

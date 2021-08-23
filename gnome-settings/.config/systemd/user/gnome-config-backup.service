@@ -1,0 +1,10 @@
+[Unit]
+Description=GNOME configuration backup
+Wants=gnome-config-backup.timer
+
+[Service]
+Type=oneshot
+ExecStart=%h/Dropbox/projects-dropbox/scripts/backup_gnome_conf.py
+
+[Install]
+WantedBy=multi-user.target
