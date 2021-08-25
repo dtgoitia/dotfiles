@@ -324,6 +324,7 @@
   "vim.foldfix": true,
   "vim.handleKeys": {
     "<C-b>": false,  // Let VSCode open/close side bar
+    "<C-f>": false,  // Let VScode search
     "<C-q>": false,  // Let VScode exit
   },
   "vim.insertModeKeyBindings": [
