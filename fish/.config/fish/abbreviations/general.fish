@@ -20,3 +20,6 @@ abbr --add health "code-insiders $DROPBOX_DIR/health"
 abbr --add wip "code-insiders $DROPBOX_DIR/WIP_TODOs.md"
 abbr --add fi "code-insiders $DROPBOX_DIR/health/fitness"
 abbr --add fitness "code-insiders $DROPBOX_DIR/health/fitness"
+
+# Temporary abbreviations until the backlight keys are remapped
+abbr --add br "brightnessctl --device='tpacpi::kbd_backlight' set"
