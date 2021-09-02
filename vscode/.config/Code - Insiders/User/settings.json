@@ -323,6 +323,7 @@
   "vim.disableExtension": false,
   "vim.foldfix": true,
   "vim.handleKeys": {
+    "<C-a>": false,  // Let VSCode select all
     "<C-b>": false,  // Let VSCode open/close side bar
     "<C-f>": false,  // Let VScode search
     "<C-q>": false,  // Let VScode exit
