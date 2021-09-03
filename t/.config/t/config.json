@@ -1,19 +1,6 @@
 {
   "projects": [
     {
-      "id": 159895159,
-      "name": "Babylon Health",
-      "entries": [
-        "Break",
-        "Code review",
-        "Coding",
-        "General",
-        "Meeting",
-        "Pairing",
-        "Support"
-      ]
-    },
-    {
       "id": 28787086,
       "name": "Learn and study",
       "entries": ["Coding", "Study coding"]
