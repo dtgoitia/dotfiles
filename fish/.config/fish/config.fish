@@ -68,7 +68,8 @@ set -x TMUX_SHELL (which fish) # fish has different paths in Linux/MacOS
 # Environment variables
 # PATH docs: http://fishshell.com/docs/current/tutorial.html#path
 # To print paths in PATH in fishshell, run `printf "%s\n" $PATH`
-fish_add_path "$HOME/Dropbox/projects-dropbox/scripts"  # Custom scripts
+fish_add_path "$HOME/Dropbox/projects-dropbox/scripts"  # Personal Dropbox scripts
+fish_add_path "$HOME/.local/bin"                        # Personal binaries
 if type -q rust
    fish_add_path "$HOME/.cargo/bin"     # Rust binaries
 end
