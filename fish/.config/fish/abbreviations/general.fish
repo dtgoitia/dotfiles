@@ -15,6 +15,7 @@ abbr --add aun "aurman -Syu --noconfirm"
 abbr --add co "code-insiders ."
 
 abbr --add dro "cd $DROPBOX_DIR"
+abbr --add job "code-insiders $DROPBOX_DIR/job"
 abbr --add travel "code-insiders $DROPBOX_DIR/travelling"
 abbr --add health "code-insiders $DROPBOX_DIR/health"
 abbr --add wip "code-insiders $DROPBOX_DIR/WIP_TODOs.md"
