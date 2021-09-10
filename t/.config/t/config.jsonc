@@ -16,17 +16,17 @@
         "Interview"
       ]
     },
-    {
-      "id": 171908171,
-      "name": "Wiserfunding",
-      "entries": [
-        "Code review",
-        "Coding",
-        "General",
-        "Meeting",
-        "Pairing"
-      ]
-    },
+    // {
+    //   "id": 171908171,
+    //   "name": "Wiserfunding",
+    //   "entries": [
+    //     "Code review",
+    //     "Coding",
+    //     "General",
+    //     "Meeting",
+    //     "Pairing"
+    //   ]
+    // },
     {
       "id": 174067391,
       "name": "CSS Investments",
