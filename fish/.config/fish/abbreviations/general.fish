@@ -22,5 +22,13 @@ abbr --add wip "code-insiders $DROPBOX_DIR/WIP_TODOs.md"
 abbr --add fi "code-insiders $DROPBOX_DIR/health/fitness"
 abbr --add fitness "code-insiders $DROPBOX_DIR/health/fitness"
 
+# Work notes
+set NOTES_DIR "$DROPBOX_DIR/job/notes"
+abbr --add css "code-insiders $DROPBOX_DIR/job/notes/2021-08-hiru-css"
+abbr --add karat "code-insiders $DROPBOX_DIR/job/notes/2021-09-hiru-karat"
+
+# Clean up variables
+set --erase DROPBOX_DIR NOTES_DIR
+
 # Temporary abbreviations until the backlight keys are remapped
 abbr --add br "brightnessctl --device='tpacpi::kbd_backlight' set"
