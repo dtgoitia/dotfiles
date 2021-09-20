@@ -1,4 +1,9 @@
-These files also work for _Visual Studio Code - Insiders_.
+The config files stored here are valid for:
+  - Visual Studio Code (a)
+  - Visual Studio Code - Insiders
+  - [VSCodium][1]
+
+All file are kept in sync with symlinks. `Code/` and `VSCodium/` point to `Code - Insiders/`.
 
 ## For Mac
 
@@ -28,3 +33,7 @@ To **restore** latest saved list of extensions:
 ```shell
 restore_last_vscode_extensions.py.py
 ```
+
+<!-- External references -->
+
+[1]: https://vscodium.com/ "VSCodium"
