@@ -29,12 +29,12 @@ truncate_to_repo = false
 
 [time]
 disabled = false
-format = "$time"
+format = "[$time](#555555)"
 
 [cmd_duration]
 disabled = true
 
 [hostname]
 ssh_only = false
-format =  "[$hostname](dimmed) "
+format = "[$hostname](dimmed) "
 disabled = false
