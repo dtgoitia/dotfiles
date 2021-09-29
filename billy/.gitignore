@@ -1,1 +1,3 @@
-credentials.jsonc
+secrets.jsonc
+gspread_credentials.json
+gspread_authorized_user.json
