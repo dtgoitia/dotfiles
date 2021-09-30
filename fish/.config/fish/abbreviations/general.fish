@@ -26,6 +26,7 @@ abbr --add fitness "code-insiders $DROPBOX_DIR/health/fitness"
 set NOTES_DIR "$DROPBOX_DIR/job/notes"
 abbr --add css "code-insiders $DROPBOX_DIR/job/notes/2021-08-hiru-css"
 abbr --add karat "code-insiders $DROPBOX_DIR/job/notes/2021-09-hiru-karat"
+abbr --add walix "code-insiders $DROPBOX_DIR/job/notes/2021-09-hiru-walix"
 
 # Clean up variables
 set --erase DROPBOX_DIR NOTES_DIR
