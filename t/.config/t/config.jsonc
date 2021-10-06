@@ -16,17 +16,6 @@
         "Interview"
       ]
     },
-    // {
-    //   "id": 171908171,
-    //   "name": "Wiserfunding",
-    //   "entries": [
-    //     "Code review",
-    //     "Coding",
-    //     "General",
-    //     "Meeting",
-    //     "Pairing"
-    //   ]
-    // },
     {
       "id": 174067391,
       "name": "CSS Investments",
@@ -48,6 +37,16 @@
         "Preparation (no charge)",
         "Training",
         "Training (self-study)"
+      ]
+    },
+    {
+      "id": "175287260",
+      "name": "Walix",
+      "entries": [
+        "Coding",
+        "General",
+        "Meeting",
+        "Preparation (no charge)"
       ]
     },
     {
