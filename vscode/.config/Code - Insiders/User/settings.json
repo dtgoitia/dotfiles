@@ -310,6 +310,7 @@
     "foreground": "magenta",
     "type": "tag"
   },
+  "todo-tree.tree.showScanModeButton": false,
   "todo-tree.general.tags": [
     "TODO",
     "ToDo",
