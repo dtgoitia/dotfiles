@@ -50,4 +50,14 @@
 		],
 		"description": "Pull request record for the job log."
 	},
+	"Karat interview related job logs": {
+		"prefix": "interview",
+		"body": [
+      "- [ ] Prepare for interview $1 ($2)",
+      "- [ ] Interview $1 ($2)",
+      "- [ ] Interview $1 ($2) write-up",
+      "- [ ] Review QQ feedback $2",
+		],
+		"description": "Karat interview related job logs"
+	}
 }
