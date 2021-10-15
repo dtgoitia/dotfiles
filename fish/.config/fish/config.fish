@@ -77,6 +77,7 @@ if type -q go
     fish_add_path "$HOME/go/bin"        # Go binaries
     set -gx GOPATH "$HOME/go"           # Go PATH
 end
+fish_add_path "$HOME/.tfenv/bin"                        # tfenv
 
 # The next line updates PATH for the Google Cloud SDK.
 if is_mac
