@@ -12,7 +12,15 @@ abbr --add pi "ping 8.8.4.4 | xargs -L 1 -I '{}' date '+%Y-%m-%d %H:%M:%S {}'"
 abbr --add au "aurman -Syu"
 abbr --add aun "aurman -Syu --noconfirm"
 
-abbr --add co "code-insiders ."
+# Open the IDE specified in the `IDE` env var, or default to VSCode
+function open-ide
+    if set -q IDE
+        $IDE $argv &
+    else
+        code-insiders $argv
+    end
+end
+abbr --add co "open-ide ."
 
 abbr --add dro "cd $DROPBOX_DIR"
 abbr --add job "code-insiders $DROPBOX_DIR/job"
