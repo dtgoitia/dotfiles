@@ -17,6 +17,9 @@ node_modules/
 # Visual Studio Code
 .vscode/
 
+# Pycharm
+.idea/
+
 # This file assumes that it is at the user's home directory
 /.android/
 /.angular-config.json
