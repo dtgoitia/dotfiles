@@ -30,6 +30,7 @@ abbr --add wip "code-insiders $DROPBOX_DIR/WIP_TODOs.md"
 abbr --add archive "code-insiders $DROPBOX_DIR/archived_TODOs.md"
 abbr --add fi "code-insiders $DROPBOX_DIR/health/fitness"
 abbr --add fitness "code-insiders $DROPBOX_DIR/health/fitness"
+abbr --add finance "code-insiders $DROPBOX_DIR/finance/ledger && code-insiders $DROPBOX_DIR/finance/ledger/private/journal"
 
 # Work notes
 set NOTES_DIR "$DROPBOX_DIR/job/notes"
