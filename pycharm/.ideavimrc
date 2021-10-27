@@ -1,2 +1,14 @@
 " Exit INSERT mode
 inoremap jj <Esc>
+
+" Yank to clipboard and from clipboard
+nnoremap dd "+dd
+vnoremap d "+d
+
+nnoremap yy "+yy
+vnoremap y "+y
+
+nnoremap p "+p
+vnoremap p "+p
+nnoremap P "+P
+vnoremap P "+P
