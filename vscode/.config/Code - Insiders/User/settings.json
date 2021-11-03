@@ -304,6 +304,15 @@
   // "prettier.configPath": ".prettier.yaml",
   // "prettier.requireConfig": true,
 
+  "runOnSave.statusMessageTimeout": 3000,
+  "runOnSave.commands": [
+    {
+      "match": "WIP_TODOs.md$",
+      "command": "wipman format",
+      "runIn": "backend",  // Set to "terminal" to debug
+    }
+  ],
+
   "scss.validate": false,
 
   "stylelint.enable": true,
