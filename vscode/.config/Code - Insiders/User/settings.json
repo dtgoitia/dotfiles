@@ -269,8 +269,6 @@
     "Zwiessele"
   ],
 
-  "git-graph.commitDetailsView.location": "Docked to Bottom",
-
   "gitlens.advanced.messages": {
     "suppressGitDisabledWarning": true
   },
