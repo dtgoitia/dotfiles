@@ -39,6 +39,8 @@ set KARAT_DIR "$DROPBOX_DIR/job/notes/2021-09-hiru-karat"
 abbr --add karat "cd $KARAT_DIR && code-insiders $KARAT_DIR"
 set WALIX_DIR "$DROPBOX_DIR/job/notes/2021-09-hiru-walix"
 abbr --add walix "cd $WALIX_DIR && code-insiders $WALIX_DIR"
+set BBM_DIR "$DROPBOX_DIR/job/notes/2022-02-hiru-bought-by-many"
+abbr --add bbm "cd $BBM_DIR && code-insiders $BBM_DIR && code-insiders $BBM_DIR/joblog/hiru-bbm-joblog.md"
 
 # Clean up variables
 set --erase DROPBOX_DIR NOTES_DIR
