@@ -284,6 +284,7 @@
   "gitlens.views.showRelativeDateMarkers": false,
 
   "insertDateString.format": "YYYY-MM-DD",
+  "insertDateString.formatTime": " hh:mm:ss ZZZ",
 
   "jupyter.askForKernelRestart": false,
 

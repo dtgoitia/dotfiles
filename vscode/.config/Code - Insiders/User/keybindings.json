@@ -96,6 +96,10 @@
     "key": "cmd+shift+i",
     "command": "insertDateString.insertDate"
   },
+  {
+    "key": "cmd+shift+o",
+    "command": "insertDateString.insertTime"
+  },
 
   //  disable default settings
   {
