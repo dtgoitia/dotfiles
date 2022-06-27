@@ -89,3 +89,8 @@ if is_mac
         . (brew --prefix)"/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
     end
 end
+
+# homebrew
+if [ -d "/home/linuxbrew/.linuxbrew" ]
+    eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+end
