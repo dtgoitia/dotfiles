@@ -39,5 +39,8 @@ abbr --add karat "cd $KARAT_DIR && code-insiders $KARAT_DIR"
 set BBM_DIR "$DROPBOX_DIR/job/notes/2022-02-hiru-bought-by-many"
 abbr --add bbm "cd $BBM_DIR && code-insiders $BBM_DIR && code-insiders $BBM_DIR/joblog/hiru-bbm-joblog.md"
 
+set DRAW_DIR "$DROPBOX_DIR/drawing"
+abbr --add draw "cd $DRAW_DIR && code-insiders $DRAW_DIR && code-insiders $DRAW_DIR/drawing-log.md"
+
 # Clean up variables
 set --erase DROPBOX_DIR NOTES_DIR
