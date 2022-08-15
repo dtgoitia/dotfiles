@@ -42,3 +42,6 @@ abbr --add draw "cd $DRAW_DIR && code-insiders $DRAW_DIR && code-insiders $DRAW_
 
 # Clean up variables
 set --erase DROPBOX_DIR NOTES_DIR BBM_DIR DRAW_DIR
+
+# nnn
+abbr --add n "nnn -e"
