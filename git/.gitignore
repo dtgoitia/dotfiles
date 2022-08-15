@@ -2,16 +2,20 @@
 .git/
 
 # Python
-.venv/
+.venv*/
 .pytest_cache/
 __pycache__/
 *.py[cod]
+*.pyc
+.tox/
+*.egg-info/
+.mypy_cache/
 
 # Direnv
 .env
 .envrc
 
-# Node
+# Node.js
 node_modules/
 
 # Visual Studio Code
@@ -19,6 +23,22 @@ node_modules/
 
 # Pycharm
 .idea/
+
+# Mac OS
+.DS_Store
+.DS_Store?
+*.swp
+/Applications/
+/Documents/
+/Library/
+/Movies/
+/Public/
+
+# Windows OS
+Thumbs.db
+
+# SQLite databases
+*.db
 
 # This file assumes that it is at the user's home directory
 /.android/
