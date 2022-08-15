@@ -100,7 +100,7 @@ fi
 # nnn configuration
 if [[ "$OSTYPE" == "$LINUX_OS"  ]]; then
     export NNN_USE_EDITOR=1
-    export VISUAL=vim
+    export VISUAL=$(which vim)
     export NNN_RESTRICT_NAV_OPEN=1
 fi
 
