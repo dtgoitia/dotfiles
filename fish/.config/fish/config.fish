@@ -59,9 +59,11 @@ else
 end
 
 # nnn
-set -x NNN_USE_EDITOR 1
-set -x VISUAL vim
-set -x NNN_RESTRICT_NAV_OPEN 1
+set --export NNN_USE_EDITOR 1
+set --export VISUAL (which vim)
+set --export NNN_RESTRICT_NAV_OPEN 1
+set --export NNN_PLUG 'j:autojump;p:preview-tui;f:fzcd;o:fzopen'
+set --export NNN_FIFO "/tmp/nnn.fifo"
 
 # tmux
 set -x TMUX_SHELL (which fish) # fish has different paths in Linux/MacOS
