@@ -124,7 +124,6 @@
   },
   "python.formatting.blackPath": "black",
   "python.formatting.provider": "black",
-  "python.insidersChannel": "daily",
   "python.languageServer": "Pylance",
   "python.terminal.activateEnvironment": false,
 
