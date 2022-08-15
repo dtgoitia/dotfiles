@@ -45,3 +45,6 @@ set --erase DROPBOX_DIR NOTES_DIR BBM_DIR DRAW_DIR
 
 # nnn
 abbr --add n "nnn -e"
+
+# tmux
+abbr --add s "tmux split-window -v -p 10 \;"
