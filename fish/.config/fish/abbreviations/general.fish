@@ -34,7 +34,6 @@ abbr --add finance "cd $HOME/projects/ledger-data && code-insiders . && code-ins
 
 # Work notes
 set NOTES_DIR "$DROPBOX_DIR/job/notes"
-abbr --add css "code-insiders $DROPBOX_DIR/job/notes/2021-08-hiru-css"
 set KARAT_DIR "$DROPBOX_DIR/job/notes/2021-09-hiru-karat"
 abbr --add karat "cd $KARAT_DIR && code-insiders $KARAT_DIR"
 set WALIX_DIR "$DROPBOX_DIR/job/notes/2021-09-hiru-walix"
