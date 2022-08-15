@@ -2,8 +2,6 @@
   "breadcrumbs.enabled": true,
 
   "css.validate": false,
-
-  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderSideBySide": true,
   "diffEditor.renderIndicators": true,
   // "editor.fontFamily": "'Ubuntu Mono', Consolas, 'Courier New', monospace",
@@ -151,6 +149,7 @@
   //
   // ============================================================================
 
+  "cSpell.enabled": true,
   "cSpell.enabledLanguageIds": [
     "asciidoc",
     "markdown",
@@ -158,7 +157,13 @@
     "restructuredtext",
     "text",
   ],
+  "cSpell.enableFiletypes": [
+    "!asciidoc",
+    "!restructuredtext",
+    "markdown",
+  ],
   "cSpell.language": "en,es-ES",
+  "cSpell.useGitignore": false,
   "cSpell.userWords": [
     "aita",
     "algo",
@@ -324,6 +329,8 @@
   // "prettier.configPath": ".prettier.yaml",
   // "prettier.requireConfig": true,
 
+  "redhat.telemetry.enabled": false,
+
   "runOnSave.statusMessageTimeout": 3000,
   "runOnSave.commands": [
     {
@@ -338,6 +345,10 @@
   "stylelint.enable": true,
 
   "terraform.telemetry.enabled": false,
+
+  "timeline.excludeSources": [
+    "timeline.localHistory"
+  ],
 
   "todo-tree.highlights.defaultHighlight": {
     "foreground": "magenta",
@@ -367,12 +378,5 @@
       "before": [ "j", "j" ],
       "after": [ "<Esc>" ],
     }
-  ],
-  "cSpell.enabled": true,
-  "cSpell.useGitignore": false,
-  "cSpell.enableFiletypes": [
-    "!asciidoc",
-    "!restructuredtext",
-    "markdown",
   ],
 }
