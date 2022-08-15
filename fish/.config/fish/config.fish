@@ -65,6 +65,13 @@ set -x NNN_RESTRICT_NAV_OPEN 1
 # tmux
 set -x TMUX_SHELL (which fish) # fish has different paths in Linux/MacOS
 
+# git
+function git_commit_from_branch_name --description "Create commit from branch name"
+    set commit_message (git rev-parse --abbrev-ref HEAD | tr _ ' ' | sed -r 's/\//: /g')
+    echo "Creating commit with message \"$commit_message\""
+    git commit -am "$commit_message"
+end
+
 # Environment variables
 # PATH docs: http://fishshell.com/docs/current/tutorial.html#path
 # To print paths in PATH in fishshell, run `printf "%s\n" $PATH`
