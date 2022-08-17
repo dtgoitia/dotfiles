@@ -34,6 +34,8 @@ abbr --add finance "cd $HOME/projects/ledger-data && code-insiders . && code-ins
 
 # Work notes
 set NOTES_DIR "$DROPBOX_DIR/job/notes"
+set CSS_DIR "$DROPBOX_DIR/job/notes/2021-08-hiru-css"
+abbr --add css "cd $CSS_DIR && code-insiders $CSS_DIR && code-insiders $CSS_DIR/hiru-css-joblog.md"
 set BBM_DIR "$DROPBOX_DIR/job/notes/2022-02-hiru-bought-by-many"
 abbr --add bbm "cd $BBM_DIR && code-insiders $BBM_DIR && code-insiders $BBM_DIR/joblog/hiru-bbm-joblog.md"
 
