@@ -11,5 +11,7 @@
     "htmlcov",
     "node_modules"
   ],
+  "encrypt_backup": true,
+  "encryption_recipient": "david.torralba.goitia@gmail.com",
   "backup_dir": "/home/dtg/Dropbox/direnv-backup/backups"
 }
