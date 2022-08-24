@@ -50,3 +50,7 @@ abbr --add n "nnn -e"
 
 # tmux
 abbr --add s "tmux split-window -v -p 10 \;"
+
+# remap keys
+abbr --add re "remap_keys_altgr_hjkl_to_arrows.sh"
+abbr --add rem "remap_keys_altgr_hjkl_to_arrows.sh"
