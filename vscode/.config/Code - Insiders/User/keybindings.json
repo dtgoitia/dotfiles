@@ -119,4 +119,10 @@
     "command": "-workbench.view.scm",
     "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
   },
+
+  // Navigation
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.openLink",
+  }
 ]
