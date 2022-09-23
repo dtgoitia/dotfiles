@@ -89,6 +89,9 @@ if type -q go
 end
 fish_add_path "$HOME/.tfenv/bin"                        # tfenv
 
+# ledger-cli entry file
+set -x LEDGER_FILE "$HOME/projects/ledger-data/main.ledger"
+
 # The next line updates PATH for the Google Cloud SDK.
 if is_mac
     if [ -f "$HOME/google-cloud-sdk/path.fish.inc" ]
