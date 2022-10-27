@@ -1,6 +1,10 @@
 {
   "set ipdb as debugger:" : {
     "prefix": "ipdb",
-    "body": "os.environ['PYTHONBREAKPOINT'] = 'ipdb.set_trace'",
-  }
+    "body": "import os; os.environ['PYTHONBREAKPOINT'] = 'ipdb.set_trace'",
+  },
+  "set pudb as debugger:" : {
+    "prefix": "pudb",
+    "body": "import os; os.environ['PYTHONBREAKPOINT'] = 'pudb.set_trace'",
+  },
 }
