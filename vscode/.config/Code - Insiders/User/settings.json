@@ -126,6 +126,12 @@
   "python.languageServer": "Pylance",
   "python.terminal.activateEnvironment": false,
 
+  "[rust]": {
+    "editor.codeLens": true,
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+  },
+
   "[shellscript]": {
     "editor.codeLens": true,
     "editor.insertSpaces": true,
