@@ -4,16 +4,12 @@
   "css.validate": false,
   "diffEditor.renderSideBySide": true,
   "diffEditor.renderIndicators": true,
-  // "editor.fontFamily": "'Ubuntu Mono', Consolas, 'Courier New', monospace",
-  "editor.experimental.stickyScroll.enabled": true,
-  // "editor.glyphMargin": false,  // get ridd off infrequently used area
   "editor.hover.delay": 600,
-  // "editor.lineNumbers": "off", // get ridd off infrequently used area
-  "editor.minimap.enabled": false, // get ridd off infrequently used area
+  "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 88, 119 ],
   "editor.showFoldingControls": "mouseover",
-  // "editor.folding": false,  // get ridd off infrequently used area
+  "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
 
   "explorer.confirmDelete": false,
