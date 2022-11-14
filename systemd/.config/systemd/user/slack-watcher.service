@@ -1,0 +1,9 @@
+[Unit]
+Description=check if Slack is running out of working hours
+
+[Service]
+Type=simple
+ExecStart=%h/Dropbox/projects-dropbox/scripts/is_slack_open_outside_working_hours
+
+[Install]
+WantedBy=default.target
