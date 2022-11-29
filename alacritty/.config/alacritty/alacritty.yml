@@ -14,7 +14,7 @@ window:
 font:
   # Point size: a gap can appear at the bottom of the emulator, depending on this value
   # and the height of the emulator window
-  size: 10.0
+  size: 9.0
 
 # Colors (One Dark)
 # Source: https://github.com/eendroroy/alacritty-theme/blob/master/themes/one_dark.yaml
