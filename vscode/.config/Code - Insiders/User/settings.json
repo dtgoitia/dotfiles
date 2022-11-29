@@ -2,8 +2,9 @@
   "breadcrumbs.enabled": true,
 
   "css.validate": false,
-  "diffEditor.renderSideBySide": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": true,
+  "diffEditor.renderSideBySide": true,
   "editor.hover.delay": 600,
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
@@ -109,13 +110,13 @@
   },
 
   "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+    },
     "editor.codeLens": true,
     "editor.formatOnSave": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
-    },
   },
   "python.formatting.blackPath": "black",
   "python.formatting.provider": "black",
@@ -130,20 +131,20 @@
 
   "[shellscript]": {
     "editor.codeLens": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
   },
 
   "[typescript]": {
-    "editor.codeLens": true,
-    "editor.formatOnSave": true,
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "vscode.typescript-language-features",
     "editor.codeActionsOnSave": {
       "source.organizeImports": true,
     },
+    "editor.codeLens": true,
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
   },
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
@@ -352,10 +353,6 @@
   "stylelint.enable": true,
 
   "terraform.telemetry.enabled": false,
-
-  "timeline.excludeSources": [
-    "timeline.localHistory"
-  ],
 
   "todo-tree.highlights.defaultHighlight": {
     "foreground": "magenta",
