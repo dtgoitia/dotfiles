@@ -72,11 +72,6 @@
     "command": "workbench.action.terminal.toggleTerminal"
   },
 
-  // GitLens
-  {
-    "key": "ctrl+shift+g g",
-    "command": "workbench.view.extension.gitlens"
-  },
 
   // vim
   {
@@ -86,9 +81,8 @@
 
   // VSCode SCM
   {
-    "key": "ctrl+shift+g space",
-    "command": "workbench.view.scm",
-    "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
+    "key": "ctrl+shift+g",
+    "command": "workbench.view.scm"
   },
 
   // Insert date
@@ -113,11 +107,6 @@
   {
     "key": "ctrl+shift+'",
     "command": "workbench.action.terminal.new"
-  },
-  {
-    "key": "ctrl+shift+g g",
-    "command": "-workbench.view.scm",
-    "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
   },
 
   // Navigation
