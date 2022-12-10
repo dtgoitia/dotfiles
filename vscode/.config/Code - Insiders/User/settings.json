@@ -50,9 +50,6 @@
   "telemetry.telemetryLevel": "off",
 
   "terminal.integrated.rendererType": "dom", // https://code.visualstudio.com/docs/editor/integrated-terminal#_changing-how-the-terminal-is-rendered
-  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
-  "terminal.integrated.shellArgs.windows": [ "-l" ],
-
   "window.menuBarVisibility": "toggle",
   "window.titleBarStyle": "custom",
   "window.zoomLevel": -1,
