@@ -15,7 +15,6 @@ source ~/.config/fish/abbreviations/general.fish
 source ~/.config/fish/abbreviations/git.fish
 source ~/.config/fish/abbreviations/fish.fish
 source ~/.config/fish/abbreviations/python.fish
-source ~/.config/fish/abbreviations/bbm.fish
 
 function is_mac --description 'return true if current machine is a Mac'
     if [ (uname) = "Darwin" ]
