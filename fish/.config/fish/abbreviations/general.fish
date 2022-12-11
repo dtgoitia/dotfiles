@@ -26,11 +26,13 @@ abbr --add dro "cd $DROPBOX_DIR"
 abbr --add job "code-insiders $DROPBOX_DIR/job"
 abbr --add travel "code-insiders $DROPBOX_DIR/travelling"
 abbr --add health "code-insiders $DROPBOX_DIR/health"
+abbr --add nutrition "code-insiders $DROPBOX_DIR/health/nutrition"
 abbr --add wip "code-insiders $DROPBOX_DIR/WIP_TODOs.md"
 abbr --add archive "code-insiders $DROPBOX_DIR/archived_TODOs.md"
 abbr --add fi "code-insiders $DROPBOX_DIR/health/fitness"
 abbr --add fitness "code-insiders $DROPBOX_DIR/health/fitness"
 abbr --add finance "cd $HOME/projects/ledger-data && code-insiders . && code-insiders ./journals/journal.ledger"
+abbr --add brain "code-insiders ~/Dropbox/second-brain"
 
 # Work notes
 set NOTES_DIR "$DROPBOX_DIR/job/notes"
