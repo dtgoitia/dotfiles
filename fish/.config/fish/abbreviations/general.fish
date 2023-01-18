@@ -34,6 +34,7 @@ abbr --add wip "code-insiders $DROPBOX_PROJECTS_DIR/WIP_TODOs.md"
 abbr --add archive "code-insiders $DROPBOX_PROJECTS_DIR/archived_TODOs.md"
 abbr --add finance "cd $HOME/projects/ledger-data && code-insiders . && code-insiders ./journals/journal.ledger"
 abbr --add brain "code-insiders $DROPBOX_DIR/second-brain"
+abbr --add log "code-insiders $DROPBOX_DIR/second-brain/journal"
 
 # Work notes
 # set BBM_DIR "$DROPBOX_DIR/job/notes/2022-02-hiru-bought-by-many"
