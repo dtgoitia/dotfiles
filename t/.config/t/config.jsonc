@@ -18,6 +18,18 @@
       ]
     },
     {
+      "id": 189289479,
+      "name": "YLD",
+      "entries": [
+        "Coding",
+        "General",
+        "Meeting",
+        "Pairing",
+        "Reviewing PRs",
+        "Training"
+      ]
+    },
+    {
       "id": 107456600,
       "name": "Health and training",
       "entries": ["Meditate", "Training", "Stretching"]
