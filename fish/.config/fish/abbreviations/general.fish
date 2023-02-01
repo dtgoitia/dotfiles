@@ -37,8 +37,8 @@ abbr --add brain "code-insiders $DROPBOX_DIR/second-brain"
 abbr --add log "code-insiders $DROPBOX_DIR/second-brain/journal"
 
 # Work notes
-# set BBM_DIR "$DROPBOX_DIR/job/notes/2022-02-hiru-bought-by-many"
-# abbr --add bbm "cd $BBM_DIR && code-insiders $BBM_DIR && code-insiders $BBM_DIR/joblog/hiru-bbm-joblog.md"
+set YLD_DIR "$DROPBOX_DIR/job/notes/2023-01-hiru-yld-bulb"
+abbr --add yld "cd $YLD_DIR && code-insiders $YLD_DIR && code-insiders $YLD_DIR/joblog/hiru-yld-bulb-joblog.md"
 
 set DRAW_DIR "$DROPBOX_DIR/drawing"
 abbr --add draw "cd $DRAW_DIR && code-insiders $DRAW_DIR && code-insiders $DRAW_DIR/drawing-log.md"
