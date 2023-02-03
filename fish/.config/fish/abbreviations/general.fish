@@ -14,12 +14,22 @@ abbr --add pi "ping 8.8.4.4 | xargs -L 1 -I '{}' date '+%Y-%m-%d %H:%M:%S {}'"
 abbr --add au "aurman -Syu"
 abbr --add aun "aurman -Syu --noconfirm"
 
+function get_vscode_bin_name
+    for bin_name in "code-insiders" "code"
+        if type -q $bin_name
+            echo $bin_name
+            break
+        end
+    end
+end
+
 # Open the IDE specified in the `IDE` env var, or default to VSCode
 function open-ide
     if set -q IDE
         $IDE $argv &
     else
-        code-insiders $argv
+        set vscode_bin_name (get_vscode_bin_name)
+        $vscode_bin_name $argv
     end
 end
 abbr --add co "open-ide ."
