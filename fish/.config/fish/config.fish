@@ -106,3 +106,8 @@ end
 if [ -d "/home/linuxbrew/.linuxbrew" ]
     eval (/home/linuxbrew/.linuxbrew/bin/brew shellenv)
 end
+
+# load jump: https://github.com/gsamokovarov/jump
+if type -q jump
+    jump shell fish | source
+end
