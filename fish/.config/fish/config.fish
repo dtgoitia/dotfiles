@@ -81,6 +81,8 @@ fish_add_path "$HOME/Dropbox/projects-dropbox/scripts"  # Personal Dropbox scrip
 fish_add_path "$HOME/.local/bin"                        # Personal binaries
 if type -q rust
    fish_add_path "$HOME/.cargo/bin"     # Rust binaries
+else if type -q rustup-init    # this is for Mac
+   fish_add_path "$HOME/.cargo/bin"     # Rust binaries
 end
 if type -q go
     fish_add_path "$HOME/go/bin"        # Go binaries
