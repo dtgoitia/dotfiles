@@ -34,24 +34,26 @@ function open-ide
 end
 abbr --add co "open-ide ."
 
+set ide_bin_name (get_vscode_bin_name)
+
 abbr --add dro "cd $DROPBOX_DIR"
-abbr --add job "code-insiders $DROPBOX_DIR/job"
-abbr --add travel "code-insiders $DROPBOX_PROJECTS_DIR/travelling"
-abbr --add health "code-insiders $SECOND_BRAIN_DIR/health"
-abbr --add nutrition "code-insiders $SECOND_BRAIN_DIR/health/nutrition"
-abbr --add fitness "code-insiders $SECOND_BRAIN_DIR/health/fitness"
-abbr --add wip "code-insiders $DROPBOX_PROJECTS_DIR/WIP_TODOs.md"
-abbr --add archive "code-insiders $DROPBOX_PROJECTS_DIR/archived_TODOs.md"
-abbr --add finance "cd $HOME/projects/ledger-data && code-insiders . && code-insiders ./journals/journal.ledger"
-abbr --add brain "code-insiders $DROPBOX_DIR/second-brain"
-abbr --add log "code-insiders $DROPBOX_DIR/second-brain/journal"
+abbr --add job "$ide_bin_name $DROPBOX_DIR/job"
+abbr --add travel "$ide_bin_name $DROPBOX_PROJECTS_DIR/travelling"
+abbr --add health "$ide_bin_name $SECOND_BRAIN_DIR/health"
+abbr --add nutrition "$ide_bin_name $SECOND_BRAIN_DIR/health/nutrition"
+abbr --add fitness "$ide_bin_name $SECOND_BRAIN_DIR/health/fitness"
+abbr --add wip "$ide_bin_name $DROPBOX_PROJECTS_DIR/WIP_TODOs.md"
+abbr --add archive "$ide_bin_name $DROPBOX_PROJECTS_DIR/archived_TODOs.md"
+abbr --add finance "cd $HOME/projects/ledger-data && $ide_bin_name . && $ide_bin_name ./journals/journal.ledger"
+abbr --add brain "$ide_bin_name $DROPBOX_DIR/second-brain"
+abbr --add log "$ide_bin_name $DROPBOX_DIR/second-brain/journal"
 
 # Work notes
 set YLD_DIR "$DROPBOX_DIR/job/notes/2023-01-hiru-yld-bulb"
-abbr --add yld "cd $YLD_DIR && code-insiders $YLD_DIR && code-insiders $YLD_DIR/joblog/hiru-yld-bulb-joblog.md"
+abbr --add yld "cd $YLD_DIR && $ide_bin_name $YLD_DIR && $ide_bin_name $YLD_DIR/joblog/hiru-yld-bulb-joblog.md"
 
 set DRAW_DIR "$DROPBOX_DIR/drawing"
-abbr --add draw "cd $DRAW_DIR && code-insiders $DRAW_DIR && code-insiders $DRAW_DIR/drawing-log.md"
+abbr --add draw "cd $DRAW_DIR && $ide_bin_name $DRAW_DIR && $ide_bin_name $DRAW_DIR/drawing-log.md"
 
 # Clean up variables
 set --erase DROPBOX_DIR DROPBOX_PROJECTS_DIR DRAW_DIR
