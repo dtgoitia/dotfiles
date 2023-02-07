@@ -32,7 +32,9 @@ disabled = false
 format = "[$time](#555555)"
 
 [cmd_duration]
-disabled = true
+format = '[$duration]($style) '
+min_time = 0
+disabled = false
 
 [hostname]
 ssh_only = false
