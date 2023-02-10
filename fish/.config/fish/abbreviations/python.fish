@@ -8,5 +8,5 @@ function find_venv
   end
 end
 
-abbr --add ac '. '(find_venv)'/bin/activate.fish'
+abbr --add ac ". (find_venv)/bin/activate.fish"
 abbr --add de 'deactivate'
