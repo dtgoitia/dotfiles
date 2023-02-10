@@ -33,8 +33,11 @@ format = "[$time](#555555)"
 
 [cmd_duration]
 format = '[$duration]($style) '
-min_time = 0
+min_time = 1_500  # ms
 disabled = false
+show_notifications = true
+min_time_to_notify = 5_000  # ms
+notification_timeout = 5_000  # ms
 
 [hostname]
 ssh_only = false
