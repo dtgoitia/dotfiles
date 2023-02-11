@@ -23,7 +23,7 @@ function get_vscode_bin_name
     end
 end
 
-function cd_open_in_ide_and_cd_back --argument-names base_dir file_path
+function cd_open_in_vscode_and_cd_back --argument-names base_dir file_path
     set original_dir (pwd)
     cd $base_dir
     $ide_bin_name $base_dir $file_path
@@ -54,14 +54,14 @@ abbr --add wip "$ide_bin_name $DROPBOX_PROJECTS_DIR/WIP_TODOs.md"
 abbr --add archive "$ide_bin_name $DROPBOX_PROJECTS_DIR/archived_TODOs.md"
 abbr --add finance "cd $HOME/projects/ledger-data && $ide_bin_name . && $ide_bin_name ./journals/journal.ledger"
 abbr --add brain "$ide_bin_name $SECOND_BRAIN_DIR"
-abbr --add log "cd_open_in_ide_and_cd_back $SECOND_BRAIN_DIR $SECOND_BRAIN_DIR/journal/log.md"
+abbr --add log "cd_open_in_vscode_and_cd_back $SECOND_BRAIN_DIR $SECOND_BRAIN_DIR/journal/log.md"
 
 # Work notes
 set YLD_DIR "$DROPBOX_DIR/job/notes/2023-01-hiru-yld-bulb"
-abbr --add yld "cd_open_in_ide_and_cd_back $YLD_DIR $YLD_DIR/joblog/hiru-yld-bulb-joblog.md"
+abbr --add yld "cd_open_in_vscode_and_cd_back $YLD_DIR $YLD_DIR/joblog/hiru-yld-bulb-joblog.md"
 
 set DRAW_DIR "$DROPBOX_DIR/drawing"
-abbr --add draw "cd_open_in_ide_and_cd_back $DRAW_DIR $DRAW_DIR/drawing-log.md"
+abbr --add draw "cd_open_in_vscode_and_cd_back $DRAW_DIR $DRAW_DIR/drawing-log.md"
 
 # Clean up variables
 set --erase DROPBOX_DIR DROPBOX_PROJECTS_DIR YLD_DIR DRAW_DIR
