@@ -26,8 +26,7 @@ end
 function cd_open_in_ide_and_cd_back --argument-names base_dir file_path
     set original_dir (pwd)
     cd $base_dir
-    $ide_bin_name $base_dir
-    $ide_bin_name $file_path
+    $ide_bin_name $base_dir $file_path
     cd $original_dir
     set --erase original_dir
 end
@@ -55,7 +54,7 @@ abbr --add wip "$ide_bin_name $DROPBOX_PROJECTS_DIR/WIP_TODOs.md"
 abbr --add archive "$ide_bin_name $DROPBOX_PROJECTS_DIR/archived_TODOs.md"
 abbr --add finance "cd $HOME/projects/ledger-data && $ide_bin_name . && $ide_bin_name ./journals/journal.ledger"
 abbr --add brain "$ide_bin_name $SECOND_BRAIN_DIR"
-abbr --add log "cd_open_in_ide_and_cd_back $SECOND_BRAIN_DIR $SECOND_BRAIN_DIR/journal"
+abbr --add log "cd_open_in_ide_and_cd_back $SECOND_BRAIN_DIR $SECOND_BRAIN_DIR/journal/log.md"
 
 # Work notes
 set YLD_DIR "$DROPBOX_DIR/job/notes/2023-01-hiru-yld-bulb"
