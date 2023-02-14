@@ -113,3 +113,8 @@ end
 if type -q jump
     jump shell fish | source
 end
+
+# gcloud
+if type -q gcloud
+    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+end
