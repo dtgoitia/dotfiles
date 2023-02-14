@@ -49,3 +49,7 @@ threshold = 1
 format = 'm:[${ram_pct}]($style) '
 symbol = ""
 disabled = false
+
+[gcloud]
+disabled = false
+format = '[$active]($style) '
