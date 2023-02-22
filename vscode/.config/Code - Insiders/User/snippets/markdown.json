@@ -21,6 +21,23 @@
     ],
     "description": "Pull request record for the job log."
   },
+  "Stand-up": {
+    "prefix": "standup",
+    "body": [
+      "- Stand-up:",
+      "  - Y: ?$0",
+    ],
+  },
+  "Comms": {
+    "prefix": "comms",
+    "body": [
+      "- Comms:",
+      "  <!-- - Review Slack -->",
+      "  <!-- - Review @Bulb email -->",
+      "  <!-- - Review @Zoa email -->",
+      "$0",
+    ],
+  },
   "Meeting": {
     "prefix": "meeting",
     "body": [
