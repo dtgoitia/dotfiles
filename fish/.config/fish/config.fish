@@ -33,6 +33,12 @@ function is_work_laptop --description 'return true if current machine is the wor
     end
 end
 
+function add_to_path_if_dir_exists --argument-names 'path' --description 'Add path to PATH if path exists' 
+    if test -d $zoa_scripts_dir
+        fish_add_path "$zoa_scripts_dir"
+    end
+end
+
 # Load direnv if installed
 if type -q direnv
     direnv hook fish | source
@@ -77,18 +83,18 @@ end
 # Environment variables
 # PATH docs: http://fishshell.com/docs/current/tutorial.html#path
 # To print paths in PATH in fishshell, run `printf "%s\n" $PATH`
-fish_add_path "$HOME/Dropbox/projects-dropbox/scripts"  # Personal Dropbox scripts
-fish_add_path "$HOME/.local/bin"                        # Personal binaries
+add_to_path_if_dir_exists "$HOME/Dropbox/projects-dropbox/scripts"  # Personal Dropbox scripts
+add_to_path_if_dir_exists "$HOME/.local/bin"                        # Personal binaries
 if type -q rust
-   fish_add_path "$HOME/.cargo/bin"     # Rust binaries
+    add_to_path_if_dir_exists "$HOME/.cargo/bin"     # Rust binaries
 else if type -q rustup-init    # this is for Mac
-   fish_add_path "$HOME/.cargo/bin"     # Rust binaries
+    add_to_path_if_dir_exists "$HOME/.cargo/bin"     # Rust binaries
 end
 if type -q go
-    fish_add_path "$HOME/go/bin"        # Go binaries
+    add_to_path_if_dir_exists "$HOME/go/bin"        # Go binaries
     set -gx GOPATH "$HOME/go"           # Go PATH
 end
-fish_add_path "$HOME/.tfenv/bin"                        # tfenv
+add_to_path_if_dir_exists "$HOME/.tfenv/bin"                        # tfenv
 
 # ledger-cli entry file
 set -x LEDGER_FILE "$HOME/projects/ledger-data/main.ledger"
