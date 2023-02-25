@@ -122,5 +122,7 @@ end
 
 # gcloud
 if type -q gcloud
-    source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+    if is_mac
+        source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
+    end
 end
