@@ -45,6 +45,7 @@
     "**/bower_components": true,
     "**/*.code-search": true,
     "**/.venv": true,
+    "**/.env": true,
   },
 
   "telemetry.telemetryLevel": "off",
@@ -112,6 +113,7 @@
     "editor.formatOnSave": true,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
+    "editor.defaultFormatter": "ms-python.python",
   },
   "python.formatting.blackPath": "black",
   "python.formatting.provider": "black",
@@ -318,7 +320,8 @@
   "markdown.extension.italic.indicator": "_",
   "markdown-table-formatter.markdownGrammarScopes": [
     "markdown",
-    "plaintext"
+    "plaintext",
+    "python"
   ],
 
   "markdown-contacts.globalNames": [
