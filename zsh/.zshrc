@@ -2,3 +2,5 @@
 echo "[$(date +%Y-%m-%d" "%T)] loading $PWD/.zshrc"
 
 export TMUX_SHELL=$(which fish)
+
+tmux
