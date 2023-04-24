@@ -1,6 +1,7 @@
 set DROPBOX_DIR "$HOME/Dropbox"
 set DROPBOX_PROJECTS_DIR "$DROPBOX_DIR/projects-dropbox"
 set SECOND_BRAIN_DIR "$DROPBOX_DIR/second-brain"
+set PROJECTS_DIR "$HOME/projects"
 
 abbr --add rmd rm -rf
 
@@ -50,7 +51,7 @@ abbr --add travel "$ide_bin_name $DROPBOX_PROJECTS_DIR/travelling"
 abbr --add health "$ide_bin_name $SECOND_BRAIN_DIR/health"
 abbr --add nutrition "$ide_bin_name $SECOND_BRAIN_DIR/health/nutrition"
 abbr --add fitness "$ide_bin_name $SECOND_BRAIN_DIR/health/fitness"
-abbr --add wip "$ide_bin_name $DROPBOX_PROJECTS_DIR/WIP_TODOs.md"
+abbr --add wip "$ide_bin_name $PROJECTS_DIR/wipman-data"
 abbr --add archive "$ide_bin_name $DROPBOX_PROJECTS_DIR/archived_TODOs.md"
 abbr --add finance "cd $HOME/projects/ledger-data && $ide_bin_name . && $ide_bin_name ./journals/journal.ledger"
 abbr --add brain "$ide_bin_name $SECOND_BRAIN_DIR"
@@ -64,7 +65,12 @@ set DRAW_DIR "$DROPBOX_DIR/drawing"
 abbr --add draw "cd_open_in_vscode_and_cd_back $DRAW_DIR $DRAW_DIR/drawing-log.md"
 
 # Clean up variables
-set --erase DROPBOX_DIR DROPBOX_PROJECTS_DIR YLD_DIR DRAW_DIR
+set --erase DROPBOX_DIR \
+            DROPBOX_PROJECTS_DIR \
+            SECOND_BRAIN_DIR \
+            PROJECTS_DIR \
+            YLD_DIR \
+            DRAW_DIR
 
 # nnn
 abbr --add n "nnn -e"
