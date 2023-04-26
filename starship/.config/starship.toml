@@ -35,9 +35,7 @@ format = "[$time](#555555)"
 format = '[$duration]($style) '
 min_time = 1_500  # ms
 disabled = false
-show_notifications = true
-min_time_to_notify = 5_000  # ms
-notification_timeout = 5_000  # ms
+show_notifications = false
 
 [hostname]
 ssh_only = false
