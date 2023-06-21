@@ -66,4 +66,8 @@
     ],
     "description": "Pull request record for the job log."
   },
+  "External references": {
+    "prefix": "external references",
+    "body": "<!-- External references -->",
+  },
 }
