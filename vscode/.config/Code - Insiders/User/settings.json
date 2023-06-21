@@ -20,6 +20,8 @@
   "extensions.autoUpdate": false,
   "extensions.ignoreRecommendations": true,  // silence extension recommendation notifications
 
+  "files.autoSave": "off",
+  
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": false,
