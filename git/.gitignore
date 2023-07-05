@@ -11,6 +11,7 @@ __pycache__/
 .tox/
 *.egg-info/
 .mypy_cache/
+.ruff_cache/
 
 # Direnv
 .env
