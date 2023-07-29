@@ -43,6 +43,9 @@ Thumbs.db
 # SQLite databases
 *.db
 
+# Rust
+target/
+
 # This file assumes that it is at the user's home directory
 /.android/
 /.angular-config.json
