@@ -16,8 +16,10 @@
     "prefix": "pr",
     "body": [
       "- Create PR: $1",
+      "- Monitor CI checks: $1",
       "- Ask CR: $1",
       "- Merge PR: $1",
+      "- Monitor deployment: $1",
     ],
     "description": "Pull request record for the job log."
   },
