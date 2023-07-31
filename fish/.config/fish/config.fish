@@ -34,8 +34,8 @@ function is_work_laptop --description 'return true if current machine is the wor
 end
 
 function add_to_path_if_dir_exists --argument-names 'path' --description 'Add path to PATH if path exists' 
-    if test -d $zoa_scripts_dir
-        fish_add_path "$zoa_scripts_dir"
+    if test -d $path
+        fish_add_path "$path"
     end
 end
 
