@@ -61,6 +61,8 @@ abbr --add log "cd_open_in_vscode_and_cd_back $SECOND_BRAIN_DIR $SECOND_BRAIN_DI
 # Work notes
 set YLD_DIR "$DROPBOX_DIR/job/notes/2023-01-hiru-yld-bulb"
 abbr --add yld "cd_open_in_vscode_and_cd_back $YLD_DIR $YLD_DIR/joblog/hiru-yld-bulb-joblog.md"
+set YLD_PP_DIR "$DROPBOX_DIR/job/notes/2023-08-hiru-yld-pluspower"
+abbr --add pp "cd_open_in_vscode_and_cd_back $YLD_PP_DIR $YLD_PP_DIR/joblog/hiru-yld-pluspower-joblog.md"
 
 set DRAW_DIR "$DROPBOX_DIR/drawing"
 abbr --add draw "cd_open_in_vscode_and_cd_back $DRAW_DIR $DRAW_DIR/drawing-log.md"
