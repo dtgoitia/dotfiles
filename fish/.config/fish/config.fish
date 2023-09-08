@@ -46,16 +46,6 @@ else
     echo 'direnv is not installed'
 end
 
-# Load work scripts
-if is_work_laptop
-    set babylon_fish_config '/Users/david.torralba/Dropbox/babylon-health/fish-scripts/babylon.fish'
-    if test -e $babylon_fish_config
-        source $babylon_fish_config
-    else
-        echo '>>> I cannot find the Babylon-specific fish config'
-    end
-end
-
 # Load starship if installed
 if type -q starship
     starship init fish | source
@@ -95,6 +85,7 @@ if type -q go
     set -gx GOPATH "$HOME/go"           # Go PATH
 end
 add_to_path_if_dir_exists "$HOME/.tfenv/bin"                        # tfenv
+add_to_path_if_dir_exists "$HOME/Dropbox/job/notes/2023-08-hiru-yld-pluspower/scripts"  # work related scripts
 
 # ledger-cli entry file
 set -x LEDGER_FILE "$HOME/projects/ledger-data/main.ledger"
