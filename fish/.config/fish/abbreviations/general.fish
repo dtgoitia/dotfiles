@@ -85,6 +85,7 @@ abbr --add s "tmux split-window -v -p 10 \;"
 # remap keys
 abbr --add re "remap_keys_altgr_hjkl_to_arrows.sh"
 abbr --add rem "remap_keys_altgr_hjkl_to_arrows.sh"
+abbr --add rec "record_audio"
 
 # Daily helpers
 abbr --add morning_countdown "at 9.00am 30 minutes && at 9.15am 15 minutes && at 9.25am 5 minutes && at 9.28am 2 minutes && at 9.29am 1 minute && at 9.30am start"
