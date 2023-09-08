@@ -16,10 +16,10 @@
     "prefix": "pr",
     "body": [
       "- Create PR: $1",
-      "- Monitor CI checks: $1",
-      "- Ask CR: $1",
-      "- Merge PR: $1",
-      "- Monitor deployment: $1",
+      "<!-- - Monitor CI checks: $1 -->",
+      "<!-- - Ask CR: $1 -->",
+      "<!-- - Merge PR: $1 -->",
+      "<!-- - Monitor deployment: $1 -->",
     ],
     "description": "Pull request record for the job log."
   },
@@ -34,11 +34,11 @@
     "prefix": "comms",
     "body": [
       "- Comms:",
-      "  <!-- - Review Slack -->",
-      "  <!-- - Review @Bulb email -->",
-      "  <!-- - Review @Zoa email -->",
+      "  <!-- - Check Slack -->",
+      "  <!-- - Check email -->",
       "$0",
     ],
+    "description": "communication chores",
   },
   "Meeting": {
     "prefix": "meeting",
