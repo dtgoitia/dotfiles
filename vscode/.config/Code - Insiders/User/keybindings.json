@@ -78,6 +78,10 @@
     "key": "ctrl+shift+v",
     "command": "toggleVim"
   },
+  {  // stop vim from intercepting Ctrl+P, to get VSCode default behaviour
+    "key": "ctrl+p",
+    "command": "-extension.vim_ctrl+p",
+  },
 
   // VSCode SCM
   {
