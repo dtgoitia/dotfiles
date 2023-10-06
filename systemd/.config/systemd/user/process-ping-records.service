@@ -1,0 +1,9 @@
+[Unit]
+Description=process recorded pings
+
+[Service]
+Type=simple
+ExecStart=%h/Dropbox/projects-dropbox/scripts/process_ping_records
+
+[Install]
+WantedBy=default.target

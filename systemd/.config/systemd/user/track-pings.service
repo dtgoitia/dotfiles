@@ -1,0 +1,9 @@
+[Unit]
+Description=track pings
+
+[Service]
+Type=simple
+ExecStart=%h/Dropbox/projects-dropbox/scripts/track_pings
+
+[Install]
+WantedBy=default.target
