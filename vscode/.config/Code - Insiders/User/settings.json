@@ -5,6 +5,7 @@
   "diffEditor.renderIndicators": true,
   "diffEditor.renderSideBySide": true,
   "editor.hover.delay": 600,
+  "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
   "editor.rulers": [ 88, 119 ],
