@@ -47,7 +47,7 @@ set ide_bin_name (get_vscode_bin_name)
 
 abbr --add dro "cd $DROPBOX_DIR"
 abbr --add job "$ide_bin_name $DROPBOX_DIR/job"
-abbr --add people "cd_open_in_vscode_and_cd_back $HOME/people $HOME/people/people.md"
+abbr --add people "cd_open_in_vscode_and_cd_back $HOME/people $HOME/people/log/people.md"
 abbr --add travel "$ide_bin_name $SECOND_BRAIN_DIR/travelling"
 abbr --add health "$ide_bin_name $SECOND_BRAIN_DIR/health"
 abbr --add nutrition "$ide_bin_name $SECOND_BRAIN_DIR/health/nutrition"
