@@ -1,0 +1,24 @@
+# Themes
+import = [
+  "/home/dtg/.config/alacritty/themes/one_dark.toml",
+  # - ~/.config/alacritty/themes/solarized_light.yml,
+]
+
+[font]
+# Point size: a gap can appear at the bottom of the emulator, depending on this value
+# and the height of the emulator window
+size = 9.0
+
+[[hints.enabled]]
+action = "Copy"
+post_processing = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.mouse]
+enabled = true
+
+[window.padding]
+# Blank space added around the window in pixels. This padding is not scaled
+# by DPI and the specified value is always added at both opposing sides.
+x = 4
+y = 4
