@@ -167,7 +167,7 @@
     "restructuredtext",
     "text",
   ],
-  "cSpell.enableFiletypes": [
+  "cSpell.enableFiletypes": [  // use this to disable spellcheck
     "!asciidoc",
     "!restructuredtext",
     "markdown",
