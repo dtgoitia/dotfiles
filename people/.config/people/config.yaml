@@ -1,5 +1,7 @@
+people_dir: ~/people
 ignore:
   - AinhoaGalarza
+  - AlaisterDalgarno
   - AlbaVidalGarcia
   - AliHammamiTamayo
   - AnderCelaya
@@ -14,12 +16,16 @@ ignore:
   - DanBabylon
   - DanielDelReguerro
   - DanielIonita
+  - Hannah
+  - HelenaPonte
   - IgorHandicaps
   - IgorTelegram
+  - IñakiGuerra
   - IñigoSalaburu
   - IreneTorralba
   - IvanArozamena
-  - IzarPerez
+  - IvanElDeBisjueces
+  - IzarMorenoPerez
   - IzasAmigaDeLaurita
   - JaviGomez
   - JoeBabylon
