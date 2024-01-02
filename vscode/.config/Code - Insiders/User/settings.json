@@ -8,7 +8,7 @@
   "editor.inlayHints.enabled": "offUnlessPressed",
   "editor.minimap.enabled": false,
   "editor.renderWhitespace": "boundary",
-  "editor.rulers": [ 88, 119 ],
+  "editor.rulers": [ 80, 109 ],
   "editor.showFoldingControls": "mouseover",
   "editor.stickyScroll.enabled": true,
   "editor.tabSize": 2,
