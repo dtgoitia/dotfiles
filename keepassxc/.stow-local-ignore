@@ -1,6 +1,0 @@
-# Stow will not create symlinks pointing to any file that matches these patterns.
-#
-# http://www.gnu.org/software/stow/manual/html_node/Types-And-Syntax-Of-Ignore-Lists.html
-
-README\.md
-\.gitignore
