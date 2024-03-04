@@ -82,7 +82,7 @@ set --erase DROPBOX_DIR \
 abbr --add n "nnn -e"
 
 # tmux
-abbr --add s "tmux split-window -v -p 10 \;"
+abbr --add s "tmux split-window -v -l (math ceil (math (tput lines)/10))"
 
 # remap keys
 abbr --add re "remap_keys_altgr_hjkl_to_arrows.sh"
