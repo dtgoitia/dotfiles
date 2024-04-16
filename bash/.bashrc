@@ -43,7 +43,23 @@ export TMUX_SHELL=$(which fish)  # tmux reads this env var to pick the default s
 
 # If Linux, load tmux and abort current file loading
 if [[ "$OSTYPE" == "$LINUX_OS" ]]; then
-    tmux
+    if tmux list-sessions 2>/dev/null | wc -l | grep 0; then
+        echo >&2 "no tmux sessions found, starting a new one"
+        tmux
+    else
+        echo >&2 "sessions found, to see them run:"
+        echo >&2 ""
+        echo >&2 "    tmux list-sessions"
+        echo >&2 ""
+        echo >&2 "and attach to them with:"
+        echo >&2 ""
+        echo >&2 "    tmux attach -t <session>"
+        echo >&2 ""
+        echo >&2 "or start a new session:"
+        echo >&2 ""
+        echo >&2 "    tmux"
+        echo >&2 ""
+    fi
 fi
 
 # Git
