@@ -2,6 +2,7 @@
   "breadcrumbs.enabled": true,
 
   "css.validate": false,
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.renderIndicators": true,
   "diffEditor.renderSideBySide": true,
   "editor.hover.delay": 600,
