@@ -57,10 +57,10 @@
   "window.titleBarStyle": "custom",
   "window.zoomLevel": -1,
 
-  "workbench.activityBar.visible": false,
+  "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "One Dark Pro",
-  "workbench.settings.editor": "json",
-  "workbench.editor.showTabs": true,
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.showTabs": "multiple",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -109,7 +109,7 @@
 
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
+      "source.organizeImports": "explicit",
     },
     "editor.codeLens": true,
     "editor.formatOnSave": true,
@@ -140,7 +140,7 @@
 
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
+      "source.organizeImports": "explicit"
     },
     "editor.codeLens": true,
     "editor.defaultFormatter": "vscode.typescript-language-features",
