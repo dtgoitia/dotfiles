@@ -3,7 +3,8 @@
     {
       "id": 28787086,
       "name": "Learn and study",
-      "entries": ["Coding", "Study coding", "Drawing", "Mentoring"]
+      "entries": ["Coding", "Study coding", "Drawing", "Mentoring"],
+      "workspace_id": 1819588
     },
     {
       "id": 171740062,
@@ -15,7 +16,8 @@
         "Meeting",
         "Interview",
         "Strategy preparation"
-      ]
+      ],
+      "workspace_id": 1819588
     },
     {
       "id": 189289479,
@@ -27,7 +29,8 @@
         "Pairing",
         "Reviewing PRs",
         "Training"
-      ]
+      ],
+      "workspace_id": 1819588
     },
     {
       "id": 193300215,
@@ -35,12 +38,14 @@
       "entries": [
         "Looking for new people",
         "Meet people"
-      ]
+      ],
+      "workspace_id": 1819588
     },
     {
       "id": 107456600,
       "name": "Health and training",
-      "entries": ["Meditate", "Training", "Stretching", "Reflect"]
+      "entries": ["Meditate", "Training", "Stretching", "Reflect"],
+      "workspace_id": 1819588
     }
   ]
 }
