@@ -117,3 +117,10 @@ if type -q gcloud
         source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
     end
 end
+
+if type -q kubectl
+    set kubeconfig_entrypoint "$HOME/.kube/config"
+    set kubeconfigs (realpath (find ~/.kube/config.d -type f) | sed ':a;N;$!ba;s/\n/:/g')
+    set -x KUBECONFIG "$kubeconfig_entrypoint:$kubeconfigs"
+    set --erase kubeconfig_entrypoint kubeconfigs
+end 
