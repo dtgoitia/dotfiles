@@ -13,3 +13,5 @@ abbr --add gr 'git reset HEAD~'
 abbr --add gw 'git commit -am "WIP_UNDO_ME"'
 abbr --add grc 'git rebase --continue'
 abbr --add gra 'git rebase --abort'
+
+abbr --add ggc 'git commit -m [(ticket)]\''
