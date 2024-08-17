@@ -1,7 +1,13 @@
 # Themes
-import = [
-  "/home/dtg/.config/alacritty/themes/one_dark.toml",
-  # - ~/.config/alacritty/themes/solarized_light.yml,
+# pick one from https://github.com/alacritty/alacritty-theme
+import = [                                                      # type  | contrast |
+  # "~/.config/alacritty/themes/github_dark_default.toml",      # dark  | low      |
+  # "~/.config/alacritty/themes/github_dark_dimmed.toml",       # dark  | low      |
+  # "~/.config/alacritty/themes/high_contrast.toml",            # dark  | high     |
+  "~/.config/alacritty/themes/one_dark.toml",                 # dark  | average  | DEFAULT
+  # "~/.config/alacritty/themes/solarized_dark.toml",           # dark  | low      |
+  # "~/.config/alacritty/themes/github_light.toml",             # light | average  |
+  # "~/.config/alacritty/themes/solarized_light.toml",          # light | low      |
 ]
 
 [font]
