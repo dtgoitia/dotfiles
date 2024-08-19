@@ -1,0 +1,4 @@
+{
+  "wait_between_checks_in_seconds": 5,
+  "notification_bin": "~/Dropbox/projects-dropbox/scripts/text_to_speech"
+}
