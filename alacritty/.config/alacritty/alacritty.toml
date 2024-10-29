@@ -1,3 +1,4 @@
+[general]
 # Themes
 # pick one from https://github.com/alacritty/alacritty-theme
 import = [                                                      # type  | contrast |
