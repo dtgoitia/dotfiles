@@ -10,7 +10,7 @@ abbr --add cl clear
 abbr --add clr clear
 abbr --add cls clear
 
-abbr --add pi "ping 8.8.4.4 | xargs -L 1 -I '{}' date '+%Y-%m-%d %H:%M:%S {}'"
+abbr --add pi "ping 8.8.4.4 | xargs -I '{}' date '+%Y-%m-%d %H:%M:%S {}' | sed -E 's/(.+) [0-9]+ bytes from .+ time=(.*) ms/\1,\2/'"
 
 abbr --add au "aurman -Syu"
 abbr --add aun "aurman -Syu --noconfirm"
