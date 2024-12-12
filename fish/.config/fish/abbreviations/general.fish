@@ -56,6 +56,7 @@ abbr --add log "cd_open_in_vscode_and_cd_back $SECOND_BRAIN_DIR $SECOND_BRAIN_DI
 abbr --add tt "t status"
 abbr --add k "kubectl"
 abbr --add ka "kubectl apply -f"
+abbr --add nv "alacritty --command nvim ."
 
 # Work notes
 set YLD_DIR "$DROPBOX_DIR/job/notes/2023-01-hiru-yld-bulb"
