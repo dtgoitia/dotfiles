@@ -51,6 +51,7 @@ abbr --add people "cd_open_in_vscode_and_cd_back $HOME/people $HOME/people/log/p
 abbr --add wip "$ide_bin_name $PROJECTS_DIR/wipman-data"
 abbr --add finance "cd $HOME/projects/ledger-data && $ide_bin_name . && $ide_bin_name ./journals/personal.ledger"
 abbr --add brain "$ide_bin_name $SECOND_BRAIN_DIR"
+abbr --add todo "cd_open_in_vscode_and_cd_back $SECOND_BRAIN_DIR $SECOND_BRAIN_DIR/todo.md"
 abbr --add log "cd_open_in_vscode_and_cd_back $SECOND_BRAIN_DIR $SECOND_BRAIN_DIR/journal/log.md"
 abbr --add tt "t status"
 abbr --add k "kubectl"
