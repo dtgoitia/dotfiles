@@ -1,0 +1,9 @@
+[Unit]
+Description=xremap key remapping service
+
+[Service]
+ExecStart=xremap %h/.config/xremap/config.yml
+Restart=always
+
+[Install]
+WantedBy=default.target

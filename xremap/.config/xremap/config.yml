@@ -1,0 +1,6 @@
+keymap:
+  - remap:  # https://github.com/xremap/xremap?tab=readme-ov-file#keymap
+      Alt_R-j: down
+      Alt_R-k: up
+      Alt_R-h: left
+      Alt_R-l: right
