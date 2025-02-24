@@ -124,3 +124,5 @@ if type -q kubectl
     set -x KUBECONFIG "$kubeconfig_entrypoint:$kubeconfigs"
     set --erase kubeconfig_entrypoint kubeconfigs
 end 
+
+add_to_path_if_dir_exists "$HOME/.nix-profile/bin"
