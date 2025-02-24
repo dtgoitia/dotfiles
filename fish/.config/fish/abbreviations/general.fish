@@ -84,8 +84,6 @@ abbr --add n "nnn -e"
 abbr --add s "tmux split-window -v -l (math ceil (math (tput lines)/10))"
 
 # remap keys
-abbr --add re "remap_keys_altgr_hjkl_to_arrows.sh"
-abbr --add rem "remap_keys_altgr_hjkl_to_arrows.sh"
 abbr --add rec "record_audio"
 
 # Daily helpers
