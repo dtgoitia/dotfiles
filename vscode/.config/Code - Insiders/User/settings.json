@@ -120,6 +120,7 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
     "editor.defaultFormatter": "charliermarsh.ruff",
+    "diffEditor.ignoreTrimWhitespace": false,
   },
   "python.analysis.inlayHints.variableTypes": true,
   "python.analysis.inlayHints.pytestParameters": true,
