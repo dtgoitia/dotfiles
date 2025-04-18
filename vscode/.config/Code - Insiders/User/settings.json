@@ -2,6 +2,9 @@
   "breadcrumbs.enabled": true,
 
   "css.validate": false,
+
+  "chat.commandCenter.enabled": false,
+
   "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.maxComputationTime": 0,  // in ms, use 0 for no time out
   "diffEditor.renderIndicators": true,
