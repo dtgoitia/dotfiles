@@ -1,57 +1,13 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-  // Disable default key bindings
-  {
-    "key": "ctrl+shift+alt+down",
-    "command": "-editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+shift+alt+up",
-    "command": "-editor.action.copyLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+up",
-    "command": "-editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+down",
-    "command": "-editor.action.insertCursorBelow",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+shift+up",
-    "command": "-editor.action.insertCursorAbove",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "-editor.action.insertLineAfter",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-
-  // Duplicate lines
-  {
-    "key": "shift+alt+down",
-    "command": "editor.action.copyLinesDownAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "shift+alt+up",
-    "command": "editor.action.copyLinesUpAction",
-    "when": "editorTextFocus && !editorReadonly"
-  },
-  
   // Multi-cursor
   {
-    "key": "ctrl+alt+up",
+    "key": "ctrl+shift+up",
     "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+alt+down",
+    "key": "ctrl+shift+down",
     "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus"
   },
